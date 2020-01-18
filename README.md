@@ -1,4 +1,4 @@
-#A2OJ local clone with updates
+# A2OJ local clone with updates
 
 A2OJ functionality with client side updates based on Codeforces API
 
