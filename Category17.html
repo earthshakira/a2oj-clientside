@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<title>A2OJ Category: MST,Disjoint sets,SCC</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+</style>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push( [ '_setAccount', 'UA-16947566-3' ]);
+	_gaq.push( [ '_trackPageview' ]);
+
+	( function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+				: 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</head>
+<body><script src="fetcher.js"></script>
+<center>
+<font size=4>
+<b>
+<u>
+MST,Disjoint sets,SCC problems</u></b></font><br/><br/>
+<table>
+<tr>
+<th></th>
+<th>Problem Name</th>
+<th>Online Judge</th>
+<th>Year</th>
+<th>Contest</th>
+<th>Difficulty Level</th>
+</tr>
+<tr>
+<td>1</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1338" target="_blank">Connect the Campus</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1524" target="_blank">Ubiquitous Religions</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1310" target="_blank">Arctic Network</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1541" target="_blank">ACM Contest and Blackout</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="http://www.spoj.com/problems/BLINNET/" target="_blank">Bytelandian Blingors Network</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>6</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=475" target="_blank">Frogger</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>7</td>
+<td><a href="p?ID=17" target="_blank">Kids Love Candies</a></td>
+<td>A2 Online Judge</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>8</td>
+<td><a href="http://www.spoj.com/problems/BOTTOM/" target="_blank">The Bottom of a Graph</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>9</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=975" target="_blank">Freckles</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="http://www.spoj.com/problems/CAPCITY/" target="_blank">Capital City</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=183" target="_blank">Calling Circles</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=849" target="_blank">Re-connecting Computer Sites</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=485" target="_blank">Heavy Cargo</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>14</td>
+<td><a href="http://www.spoj.com/problems/BUGLIFE/" target="_blank">A Bug&amp;#8217;s Life</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>15</td>
+<td><a href="http://www.spoj.com/problems/CSTREET/" target="_blank">Cobbled streets</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>16</td>
+<td><a href="http://www.spoj.com/problems/TOUR/" target="_blank">Fake tournament</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>17</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2498" target="_blank">Virtual Friends</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>18</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2678" target="_blank">Dark roads</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>19</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=734" target="_blank">Network Connections</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>20</td>
+<td><a href="http://www.spoj.com/problems/HERDING/" target="_blank">Herding</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>21</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2499" target="_blank">Dominos</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>22</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=400" target="_blank">Graph Connectivity</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>23</td>
+<td><a href="http://www.spoj.com/problems/BENEFACT/" target="_blank">The Benefactor</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>24</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1549" target="_blank">Friends</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>25</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=989" target="_blank">Audiophobia</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>26</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2267" target="_blank">Dragon of Loowater</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>27</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1040" target="_blank">The Tourist Guide</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>28</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=4147" target="_blank">Fix the Pond</a></td>
+<td>Live Archive</td>
+<td>2012</td>
+<td>Latin America</td>
+<td>2</td>
+</tr>
+<tr>
+<td>29</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2833" target="_blank">Airports</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>30</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1088" target="_blank">Highways</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>31</td>
+<td><a href="http://www.spoj.com/problems/RELINETS/" target="_blank">Reliable Nets</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>32</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1626" target="_blank">Nature</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>33</td>
+<td><a href="http://www.spoj.com/problems/TFRIENDS/" target="_blank">True Friends</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>34</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2957" target="_blank">Driving Range</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>35</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1403" target="_blank">Is There A Second Way Left?</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>36</td>
+<td><a href="http://www.spoj.com/problems/KOICOST/" target="_blank">Cost</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>37</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2737" target="_blank">Money Matters</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>38</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2938" target="_blank">Come and Go</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>39</td>
+<td><a href="http://acm.tju.edu.cn/toj/showp3499.html" target="_blank">Network</a></td>
+<td>TJU</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>40</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1242" target="_blank">Rings and Glue</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>41</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1783" target="_blank">Traffic Flow</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>42</td>
+<td><a href="http://acm.tju.edu.cn/toj/showp1172.html" target="_blank">Heavy Cargo</a></td>
+<td>TJU</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>43</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=4551" target="_blank">Fibonacci Tree</a></td>
+<td>Live Archive</td>
+<td>2013</td>
+<td>Asia - Chengdu</td>
+<td>2</td>
+</tr>
+<tr>
+<td>44</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1099" target="_blank">War</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>45</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2169" target="_blank">Transportation system.</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>46</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2870" target="_blank">Lighting Away</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>47</td>
+<td><a href="http://acm.tju.edu.cn/toj/showp1348.html" target="_blank">Freckles</a></td>
+<td>TJU</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>48</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3615" target="_blank">IP-TV</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>49</td>
+<td><a href="http://acm.tju.edu.cn/toj/showp2288.html" target="_blank">Highways</a></td>
+<td>TJU</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>50</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=5013" target="_blank">Bus Problem</a></td>
+<td>Live Archive</td>
+<td>2014</td>
+<td>Asia - Taichung</td>
+<td>2</td>
+</tr>
+<tr>
+<td>51</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2847" target="_blank">Heavy Cycle Edges</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>52</td>
+<td><a href="http://www.spoj.com/problems/CHAIN/" target="_blank">Strange Food Chain</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>53</td>
+<td><a href="http://acm.tju.edu.cn/toj/showp3518.html" target="_blank">Buy Car</a></td>
+<td>TJU</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>54</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2757" target="_blank">Expensive subway</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>55</td>
+<td><a href="http://www.spoj.com/problems/CORNET/" target="_blank">Corporative Network</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>56</td>
+<td><a href="http://www.spoj.com/problems/PMATRIX/" target="_blank">Proving Equivalences</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>57</td>
+<td><a href="http://poj.org/problem?id=3646" target="_blank">The Dragon of Loowater</a></td>
+<td>PKU</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>58</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3138" target="_blank">Almost Union-Find</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>59</td>
+<td><a href="http://www.spoj.com/problems/MOWS/" target="_blank">Madrids One Way Streets</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>60</td>
+<td><a href="http://acm.tju.edu.cn/toj/showp2531.html" target="_blank">Oreon</a></td>
+<td>TJU</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>61</td>
+<td><a href="http://www.spoj.com/problems/SQDANCE/" target="_blank">Square dance</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>62</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3601" target="_blank">X-Plosives</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>63</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3649" target="_blank">Oreon</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>64</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3676" target="_blank">Anti Brute Force Lock</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>65</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3675" target="_blank">RACING</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>66</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1248" target="_blank">Killing Aliens in Borg Maze</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>67</td>
+<td><a href="http://www.spoj.com/problems/FATAWY/" target="_blank">Fatawy</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>68</td>
+<td><a href="http://www.spoj.com/problems/MSTS/" target="_blank">Count Minimum Spanning Trees</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>69</td>
+<td><a href="http://codeforces.com/problemset/problem/455/C" target="_blank">Civilization</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #260 (Div. 1) & Codeforces Round #260 (Div. 2)</td>
+<td>4</td>
+</tr>
+<tr>
+<td>70</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3657" target="_blank">The Bug Sensor Problem</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>71</td>
+<td><a href="http://www.spoj.com/problems/ISLHOP/" target="_blank">Island Hopping</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>72</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1748" target="_blank">Prim</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>73</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3785" target="_blank">Hedge Mazes</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>74</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3974" target="_blank">Fix the Pond</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>75</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3951" target="_blank">Kingdoms</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>76</td>
+<td><a href="http://codeforces.com/problemset/problem/73/D" target="_blank">FreeDiv</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Beta Round #66</td>
+<td>8</td>
+</tr>
+<tr>
+<td>77</td>
+<td><a href="http://codeforces.com/problemset/problem/687/D" target="_blank">Dividing Kingdom II</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #360 (Div. 1)</td>
+<td>8</td>
+</tr>
+</table>
+</center>
+</body>
+</html>

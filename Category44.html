@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<title>A2OJ Category: Suffix Array/Tree</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+</style>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push( [ '_setAccount', 'UA-16947566-3' ]);
+	_gaq.push( [ '_trackPageview' ]);
+
+	( function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+				: 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</head>
+<body><script src="fetcher.js"></script>
+<center>
+<font size=4>
+<b>
+<u>
+Suffix Array/Tree problems</u></b></font><br/><br/>
+<table>
+<tr>
+<th></th>
+<th>Problem Name</th>
+<th>Online Judge</th>
+<th>Year</th>
+<th>Contest</th>
+<th>Difficulty Level</th>
+</tr>
+<tr>
+<td>1</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1620" target="_blank">I Love Strings!!</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=2514" target="_blank">Stammering Aliens</a></td>
+<td>Live Archive</td>
+<td>2009</td>
+<td>Europe - Southwestern</td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="http://www.spoj.com/problems/LCS/" target="_blank">Longest Common Substring</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="http://www.spoj.com/problems/SARRAY/" target="_blank">Suffix Array</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="http://www.spoj.com/problems/SUBST1/" target="_blank">New Distinct Substrings</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>6</td>
+<td><a href="http://www.spoj.com/problems/DISUBSTR/" target="_blank">Distinct Substrings</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>7</td>
+<td><a href="http://www.spoj.com/problems/BEADS/" target="_blank">Glass Beads</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>8</td>
+<td><a href="http://www.spoj.com/problems/SUBLEX/" target="_blank">Lexicographical Substring Search</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>9</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=756" target="_blank">Hidden Password</a></td>
+<td>Live Archive</td>
+<td>2003</td>
+<td>Europe - Southeastern</td>
+<td>1</td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="http://acm.tju.edu.cn/toj/showp3601.html" target="_blank">Longest Contiguous Subsequence</a></td>
+<td>TJU</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2507" target="_blank">GATTACA</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="http://www.spoj.com/problems/LCS2/" target="_blank">Longest Common Substring II </a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=660" target="_blank">Glass Beads</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>14</td>
+<td><a href="http://www.spoj.com/problems/MINMOVE/" target="_blank">Minimum Rotations</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>15</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1175" target="_blank">Frequent Substrings</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>16</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=4060" target="_blank">Hidden Password</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>17</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3358" target="_blank">Stammering Aliens</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>18</td>
+<td><a href="http://codeforces.com/problemset/problem/113/B" target="_blank">Petr#</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Beta Round #86 (Div. 1 Only) & Codeforces Beta Round #86 (Div. 2 Only)</td>
+<td>5</td>
+</tr>
+<tr>
+<td>19</td>
+<td><a href="http://acm.sgu.ru/problem.php?contest=0&problem=411" target="_blank">Petya the Hero</a></td>
+<td>SGU</td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>20</td>
+<td><a href="http://codeforces.com/problemset/problem/149/E" target="_blank">Martian Strings</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #106 (Div. 2)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>21</td>
+<td><a href="http://codeforces.com/problemset/problem/128/B" target="_blank">String</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Beta Round #94 (Div. 1 Only) & Codeforces Beta Round #94 (Div. 2 Only)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>22</td>
+<td><a href="http://codeforces.com/problemset/problem/235/C" target="_blank">Cyclical Quest</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #146 (Div. 1) & Codeforces Round #146 (Div. 2)</td>
+<td>7</td>
+</tr>
+<tr>
+<td>23</td>
+<td><a href="http://codeforces.com/problemset/problem/123/D" target="_blank">String</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Beta Round #92 (Div. 1 Only)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>24</td>
+<td><a href="http://codeforces.com/problemset/problem/86/C" target="_blank">Genetic engineering</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Yandex.Algorithm 2011 Round 2</td>
+<td>8</td>
+</tr>
+<tr>
+<td>25</td>
+<td><a href="http://codeforces.com/problemset/problem/19/C" target="_blank">Deletion of Repeats</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Beta Round #19</td>
+<td>8</td>
+</tr>
+<tr>
+<td>26</td>
+<td><a href="http://codeforces.com/problemset/problem/204/E" target="_blank">Little Elephant and Strings</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #129 (Div. 1)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>27</td>
+<td><a href="http://codeforces.com/problemset/problem/232/D" target="_blank">Fence</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #144 (Div. 1)</td>
+<td>9</td>
+</tr>
+</table>
+</center>
+</body>
+</html>

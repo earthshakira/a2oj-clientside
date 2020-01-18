@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<title>A2OJ Category: Trie</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+</style>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push( [ '_setAccount', 'UA-16947566-3' ]);
+	_gaq.push( [ '_trackPageview' ]);
+
+	( function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+				: 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</head>
+<body><script src="fetcher.js"></script>
+<center>
+<font size=4>
+<b>
+<u>
+Trie problems</u></b></font><br/><br/>
+<table>
+<tr>
+<th></th>
+<th>Problem Name</th>
+<th>Online Judge</th>
+<th>Year</th>
+<th>Contest</th>
+<th>Difficulty Level</th>
+</tr>
+<tr>
+<td>1</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=2683" target="_blank">XOR Sum</a></td>
+<td>Live Archive</td>
+<td>2009</td>
+<td>Asia - Amritapuri</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="http://www.spoj.com/problems/PHONELST/" target="_blank">Phone List</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="http://www.spoj.com/problems/CHOCOLA/" target="_blank">Chocolate</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="http://www.spoj.com/problems/DICT/" target="_blank">Search in the dictionary!</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2347" target="_blank">Phone List</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>6</td>
+<td><a href="http://www.spoj.com/problems/DISUBSTR/" target="_blank">Distinct Substrings</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>7</td>
+<td><a href="http://www.spoj.com/problems/ORDERSET/" target="_blank">Order statistic set</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>8</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=427" target="_blank">Multiple Morse Matches</a></td>
+<td>Live Archive</td>
+<td>2001</td>
+<td>Europe - Central & Europe - Southwestern</td>
+<td>2</td>
+</tr>
+<tr>
+<td>9</td>
+<td><a href="http://www.spoj.com/problems/SUBXOR/" target="_blank">SubXor</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="http://www.spoj.com/problems/MORSE/" target="_blank">Decoding Morse Sequences</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="http://acm.tju.edu.cn/toj/showp2935.html" target="_blank">Phone List</a></td>
+<td>TJU</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=3803" target="_blank">Diccion&aacute;rio Portu&ntilde;ol</a></td>
+<td>Live Archive</td>
+<td>2011</td>
+<td>Latin America</td>
+<td>2</td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="http://vn.spoj.com/problems/CHAIN2/" target="_blank">Chu&amp;#7895;i t&amp;#7915;</a></td>
+<td>SPOJ Vietnam</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>14</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2483" target="_blank">Hyper Prefix Sets</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>15</td>
+<td><a href="http://codeforces.com/problemset/problem/514/C" target="_blank">Watto and Mechanism</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #291 (Div. 2)</td>
+<td>3</td>
+</tr>
+<tr>
+<td>16</td>
+<td><a href="http://codeforces.com/problemset/problem/706/D" target="_blank">Vasiliy's Multiset</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #367 (Div. 2)</td>
+<td>3</td>
+</tr>
+<tr>
+<td>17</td>
+<td><a href="http://www.spoj.com/problems/PRHYME/" target="_blank">Perfect Rhyme</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>18</td>
+<td><a href="http://www.spoj.com/problems/TAP2012D/" target="_blank">Designing T-Shirts</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>19</td>
+<td><a href="http://www.codechef.com/problems/PPTREE" target="_blank">Polo the Penguin and the Tree</a></td>
+<td>CodeChef</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>20</td>
+<td><a href="http://codeforces.com/problemset/problem/271/D" target="_blank">Good Substrings</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #166 (Div. 2)</td>
+<td>3</td>
+</tr>
+<tr>
+<td>21</td>
+<td><a href="http://vn.spoj.com/problems/SEC/" target="_blank">Tin m&amp;#7853;t</a></td>
+<td>SPOJ Vietnam</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>22</td>
+<td><a href="http://www.codechef.com/problems/XRQRS" target="_blank">Xor Queries</a></td>
+<td>CodeChef</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>23</td>
+<td><a href="http://codeforces.com/problemset/problem/923/C" target="_blank">Perfect Security</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>VK Cup 2018 - Round 1</td>
+<td>4</td>
+</tr>
+<tr>
+<td>24</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1960" target="_blank">Matrix Matcher</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>25</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1175" target="_blank">Frequent Substrings</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>26</td>
+<td><a href="http://www.spoj.com/problems/JZPGYZ/" target="_blank">Sevenk Love Oimaster</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>27</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3950" target="_blank">Shortest Names</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>28</td>
+<td><a href="http://acm.tju.edu.cn/toj/showp3166.html" target="_blank">Secret Message</a></td>
+<td>TJU</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>29</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3971" target="_blank">Cellphone Typing</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>30</td>
+<td><a href="http://codeforces.com/problemset/problem/858/D" target="_blank">Polycarp's phone book</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>?????????? 2018 - ?????????? ????? 1</td>
+<td>4</td>
+</tr>
+<tr>
+<td>31</td>
+<td><a href="http://codeforces.com/problemset/problem/455/B" target="_blank">A Lot of Games</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #260 (Div. 1) & Codeforces Round #260 (Div. 2)</td>
+<td>4</td>
+</tr>
+<tr>
+<td>32</td>
+<td><a href="http://www.codechef.com/problems/MINXOR" target="_blank">XOR Minimization</a></td>
+<td>CodeChef</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>33</td>
+<td><a href="http://www.codechef.com/problems/KGP13G" target="_blank">Message Coding</a></td>
+<td>CodeChef</td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>34</td>
+<td><a href="http://www.codechef.com/problems/SUBBXOR" target="_blank">Subarray Xor</a></td>
+<td>CodeChef</td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>35</td>
+<td><a href="http://codeforces.com/problemset/problem/282/E" target="_blank">Sausage Maximization</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #173 (Div. 2)</td>
+<td>5</td>
+</tr>
+<tr>
+<td>36</td>
+<td><a href="http://codeforces.com/problemset/problem/842/D" target="_blank">Vitya and Strange Lesson</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #430 (Div. 2)</td>
+<td>5</td>
+</tr>
+<tr>
+<td>37</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3554" target="_blank">Multiple Morse Matches</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>38</td>
+<td><a href="p?ID=262" target="_blank">Tree</a></td>
+<td>A2 Online Judge</td>
+<td></td>
+<td></td>
+<td>7</td>
+</tr>
+<tr>
+<td>39</td>
+<td><a href="http://codeforces.com/problemset/problem/37/C" target="_blank">Old Berland Language</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Beta Round #37</td>
+<td>7</td>
+</tr>
+<tr>
+<td>40</td>
+<td><a href="http://codeforces.com/problemset/problem/665/E" target="_blank">Beautiful Subarrays</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Educational Codeforces Round 12</td>
+<td>7</td>
+</tr>
+<tr>
+<td>41</td>
+<td><a href="http://codeforces.com/problemset/problem/979/D" target="_blank">Kuro and GCD and XOR and SUM</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #482 (Div. 2)</td>
+<td>7</td>
+</tr>
+<tr>
+<td>42</td>
+<td><a href="http://codeforces.com/problemset/problem/888/G" target="_blank">Xor-MST</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Educational Codeforces Round 32</td>
+<td>8</td>
+</tr>
+</table>
+</center>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<title>A2OJ Category: KMP</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+</style>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push( [ '_setAccount', 'UA-16947566-3' ]);
+	_gaq.push( [ '_trackPageview' ]);
+
+	( function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+				: 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</head>
+<body><script src="fetcher.js"></script>
+<center>
+<font size=4>
+<b>
+<u>
+KMP problems</u></b></font><br/><br/>
+<table>
+<tr>
+<th></th>
+<th>Problem Name</th>
+<th>Online Judge</th>
+<th>Year</th>
+<th>Contest</th>
+<th>Difficulty Level</th>
+</tr>
+<tr>
+<td>1</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=396" target="_blank">Periodic Strings</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1239" target="_blank">Power Strings</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="http://www.spoj.com/problems/EPALIN/" target="_blank">Extend to Palindrome</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="http://www.spoj.com/problems/NHAY/" target="_blank">A Needle in the Haystack</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1620" target="_blank">I Love Strings!!</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>6</td>
+<td><a href="http://www.spoj.com/problems/PERIOD/" target="_blank">Period</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>7</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=1027" target="_blank">Period</a></td>
+<td>Live Archive</td>
+<td>2004</td>
+<td>Europe - Southeastern</td>
+<td>1</td>
+</tr>
+<tr>
+<td>8</td>
+<td><a href="http://www.spoj.com/problems/NAJPF/" target="_blank">Pattern Find</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>9</td>
+<td><a href="http://www.spoj.com/problems/FINDSR/" target="_blank">Find String Roots</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="http://www.spoj.com/problems/ARDA1/" target="_blank">The hunt for Gollum</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="http://acm.timus.ru/problem.aspx?space=1&num=1423" target="_blank">String Tale</a></td>
+<td>Timus</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="http://www.spoj.com/problems/FILRTEST/" target="_blank">File Recover Testing</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="http://www.spoj.com/problems/PSTRING/" target="_blank">Remove The String</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>14</td>
+<td><a href="http://codeforces.com/problemset/problem/126/B" target="_blank">Password</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Beta Round #93 (Div. 1 Only) & Codeforces Beta Round #93 (Div. 2 Only)</td>
+<td>2</td>
+</tr>
+<tr>
+<td>15</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2470" target="_blank">Extend to Palindrome</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>16</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1963" target="_blank">String Factoring</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>17</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2988" target="_blank">Abnormal 89's</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>18</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2623" target="_blank">Scrolling Sign</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>19</td>
+<td><a href="http://www.spoj.com/problems/VPALIN/" target="_blank">Finding Palindromes</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>20</td>
+<td><a href="http://www.spoj.com/problems/CF25E/" target="_blank">Test</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>21</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2447" target="_blank">Dancing the Cheeky-Cheeky</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>22</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3911" target="_blank">Secret Word</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>23</td>
+<td><a href="http://www.spoj.com/problems/JZPGYZ/" target="_blank">Sevenk Love Oimaster</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>24</td>
+<td><a href="http://codeforces.com/problemset/problem/535/D" target="_blank">Tavas and Malekas</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #299 (Div. 2) & Codeforces Round #299 (Div. 1)</td>
+<td>4</td>
+</tr>
+<tr>
+<td>25</td>
+<td><a href="http://codeforces.com/problemset/problem/432/D" target="_blank">Prefixes and Suffixes</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #246 (Div. 2)</td>
+<td>4</td>
+</tr>
+<tr>
+<td>26</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1960" target="_blank">Matrix Matcher</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>27</td>
+<td><a href="http://codeforces.com/problemset/problem/471/D" target="_blank">MUH and Cube Walls</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #269 (Div. 2)</td>
+<td>4</td>
+</tr>
+<tr>
+<td>28</td>
+<td><a href="http://www.spoj.com/problems/CPATTERN/" target="_blank">Cow Patterns</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>29</td>
+<td><a href="http://codeforces.com/problemset/problem/346/B" target="_blank">Lucky Common Subsequence</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #201 (Div. 1) & Codeforces Round #201 (Div. 2)</td>
+<td>5</td>
+</tr>
+<tr>
+<td>30</td>
+<td><a href="http://codeforces.com/problemset/problem/494/B" target="_blank">Obsessive String</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #282 (Div. 1) & Codeforces Round #282 (Div. 2)</td>
+<td>5</td>
+</tr>
+<tr>
+<td>31</td>
+<td><a href="http://www.spoj.com/problems/ANARC08C/" target="_blank">Match Maker</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>32</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=4282" target="_blank">Caesar Cipher</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>33</td>
+<td><a href="http://codeforces.com/problemset/problem/631/D" target="_blank">Messenger</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #344 (Div. 2)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>34</td>
+<td><a href="http://www.spoj.com/problems/UNTITLED/" target="_blank">Untitled Problem</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>7</td>
+</tr>
+<tr>
+<td>35</td>
+<td><a href="http://codeforces.com/problemset/problem/119/D" target="_blank">String Transformation</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Beta Round #90</td>
+<td>9</td>
+</tr>
+</table>
+</center>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<title>A2OJ Category: MO?s Algorithm (Query square root decomposition)</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+</style>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push( [ '_setAccount', 'UA-16947566-3' ]);
+	_gaq.push( [ '_trackPageview' ]);
+
+	( function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+				: 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</head>
+<body><script src="fetcher.js"></script>
+<center>
+<font size=4>
+<b>
+<u>
+MO?s Algorithm (Query square root decomposition) problems</u></b></font><br/><br/>
+<table>
+<tr>
+<th></th>
+<th>Problem Name</th>
+<th>Online Judge</th>
+<th>Contest</th>
+<th>Difficulty Level</th>
+</tr>
+<tr>
+<td>1</td>
+<td><a href="http://www.spoj.com/problems/DQUERY/" target="_blank">D-query</a></td>
+<td>SPOJ</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="http://codeforces.com/problemset/problem/506/D" target="_blank">Mr. Kitayuta's Colorful Graph</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #286 (Div. 1) & Codeforces Round #286 (Div. 2) & Codeforces Round #286 (Div. 1) & Codeforces Round #286 (Div. 2)</td>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="http://acm.timus.ru/problem.aspx?space=1&num=1846" target="_blank">GCD 2010</a></td>
+<td>Timus</td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="http://www.spoj.com/problems/ZQUERY/" target="_blank">Zero Query</a></td>
+<td>SPOJ</td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="http://codeforces.com/problemset/problem/220/B" target="_blank">Little Elephant and Array</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #136 (Div. 1) & Codeforces Round #136 (Div. 2)</td>
+<td>3</td>
+</tr>
+<tr>
+<td>6</td>
+<td><a href="http://codeforces.com/problemset/problem/86/D" target="_blank">Powerful array</a></td>
+<td>Codeforces</td>
+<td>Yandex.Algorithm 2011 Round 2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>7</td>
+<td><a href="http://www.spoj.com/problems/GOT/" target="_blank">Gao on a tree</a></td>
+<td>SPOJ</td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>8</td>
+<td><a href="http://codeforces.com/problemset/problem/617/E" target="_blank">XOR and Favorite Number</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #340 (Div. 2)</td>
+<td>4</td>
+</tr>
+<tr>
+<td>9</td>
+<td><a href="http://codeforces.com/problemset/problem/342/E" target="_blank">Xenia and Tree</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #199 (Div. 2)</td>
+<td>4</td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="http://codeforces.com/problemset/problem/641/E" target="_blank">Little Artem and Time Machine</a></td>
+<td>Codeforces</td>
+<td>VK Cup 2016 - Round 2</td>
+<td>5</td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="http://codeforces.com/problemset/problem/375/D" target="_blank">Tree and Queries</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #221 (Div. 1)</td>
+<td>5</td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="http://codeforces.com/problemset/problem/444/C" target="_blank">DZY Loves Colors</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #254 (Div. 1) & Codeforces Round #254 (Div. 2)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="http://codeforces.com/problemset/problem/44/C" target="_blank">Holidays</a></td>
+<td>Codeforces</td>
+<td>School Team Contest #2 (Winter Computer School 2010/11)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>14</td>
+<td><a href="http://www.spoj.com/problems/ADANUM/" target="_blank">Ada and Numbering</a></td>
+<td>SPOJ</td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>15</td>
+<td><a href="http://codeforces.com/problemset/problem/13/E" target="_blank">Holes</a></td>
+<td>Codeforces</td>
+<td>Codeforces Beta Round #13</td>
+<td>6</td>
+</tr>
+<tr>
+<td>16</td>
+<td><a href="http://codeforces.com/problemset/problem/455/D" target="_blank">Serega and Fun</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #260 (Div. 1)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>17</td>
+<td><a href="http://www.spoj.com/problems/CPAIR2/" target="_blank">Counting diff-pairs</a></td>
+<td>SPOJ</td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>18</td>
+<td><a href="http://codeforces.com/problemset/problem/446/C" target="_blank">DZY Loves Fibonacci Numbers</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #255 (Div. 1) & Codeforces Round #255 (Div. 2)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>19</td>
+<td><a href="http://codeforces.com/problemset/problem/348/C" target="_blank">Subset Sums</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #202 (Div. 1) & Codeforces Round #202 (Div. 2)</td>
+<td>7</td>
+</tr>
+<tr>
+<td>20</td>
+<td><a href="http://codeforces.com/problemset/problem/487/D" target="_blank">Conveyor Belts</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #278 (Div. 1)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>21</td>
+<td><a href="http://codeforces.com/problemset/problem/877/F" target="_blank">Ann and Books</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #442 (Div. 2)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>22</td>
+<td><a href="http://codeforces.com/problemset/problem/398/D" target="_blank">Instant Messanger</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #233 (Div. 1)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>23</td>
+<td><a href="http://codeforces.com/problemset/problem/351/D" target="_blank">Jeff and Removing Periods</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #204 (Div. 1)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>24</td>
+<td><a href="http://codeforces.com/problemset/problem/840/D" target="_blank">Destiny</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #429 (Div. 1)</td>
+<td>8</td>
+</tr>
+</table>
+</center>
+</body>
+</html>

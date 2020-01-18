@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<title>A2OJ Category: Network Flow</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+</style>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push( [ '_setAccount', 'UA-16947566-3' ]);
+	_gaq.push( [ '_trackPageview' ]);
+
+	( function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+				: 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</head>
+<body><script src="fetcher.js"></script>
+<center>
+<font size=4>
+<b>
+<u>
+Network Flow problems</u></b></font><br/><br/>
+<table>
+<tr>
+<th></th>
+<th>Problem Name</th>
+<th>Online Judge</th>
+<th>Year</th>
+<th>Contest</th>
+<th>Difficulty Level</th>
+</tr>
+<tr>
+<td>1</td>
+<td><a href="http://www.spoj.com/problems/MTOTALF/" target="_blank">Total Flow</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="http://www.spoj.com/problems/POTHOLE/" target="_blank">Potholers</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="http://www.spoj.com/problems/QUEST4/" target="_blank">Dungeon of Death</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="http://www.spoj.com/problems/FASTFLOW/" target="_blank">Fast Maximum Flow</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="http://www.spoj.com/problems/MATCHING/" target="_blank">Fast Maximum Matching</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>6</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=761" target="_blank">Internet Bandwidth</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>7</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=1563" target="_blank">Remember the A La Mode!</a></td>
+<td>Live Archive</td>
+<td>2006</td>
+<td>World Finals - San Antonio</td>
+<td>1</td>
+</tr>
+<tr>
+<td>8</td>
+<td><a href="http://www.spoj.com/problems/ACODE/" target="_blank">Alphacode</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>9</td>
+<td><a href="http://www.spoj.com/problems/TAXI/" target="_blank">Taxi</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=2260" target="_blank">Dangerous Tunnels</a></td>
+<td>Live Archive</td>
+<td>2008</td>
+<td>Asia - Taipei</td>
+<td>1</td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="http://codeforces.com/problemset/problem/61/A" target="_blank">Ultra-Fast Mathematician</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Beta Round #57 (Div. 2)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="http://poj.org/problem?id=1273" target="_blank">Drainage Ditches</a></td>
+<td>PKU</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="http://www.spoj.com/problems/ANGELS/" target="_blank">Angels and Devils</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>14</td>
+<td><a href="http://www.spoj.com/problems/BABY/" target="_blank">Baby</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>15</td>
+<td><a href="http://www.spoj.com/problems/CABLETV/" target="_blank">Cable TV Network</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>16</td>
+<td><a href="http://www.spoj.com/problems/COCONUTS/" target="_blank">Coconuts</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>17</td>
+<td><a href="http://www.spoj.com/problems/MUDDY/" target="_blank">Muddy Fields</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>18</td>
+<td><a href="http://www.spoj.com/problems/SCITIES/" target="_blank">Selfish Cities</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>19</td>
+<td><a href="http://www.spoj.com/problems/TTTABLE/" target="_blank">Train TimeTable</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>20</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1747" target="_blank">Dijkstra, Dijkstra.</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>21</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1271" target="_blank">Power Transmission</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>22</td>
+<td><a href="http://www.spoj.com/problems/NETADMIN/" target="_blank">Smart Network Administrator</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>23</td>
+<td><a href="http://www.spoj.com/problems/OPTM/" target="_blank">Optimal Marks</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>24</td>
+<td><a href="http://www.spoj.com/problems/EN/" target="_blank">Entrapment</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>25</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=195" target="_blank">Software Allocation</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>26</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1986" target="_blank">My T-shirt suits me</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>27</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2501" target="_blank">Angry Programmer</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>28</td>
+<td><a href="http://www.spoj.com/problems/IM/" target="_blank">Intergalactic Map</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>29</td>
+<td><a href="http://www.spoj.com/problems/GREED/" target="_blank">Greedy island</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>30</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1421" target="_blank">Sabotage</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>31</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=3221" target="_blank">Internet Bandwidth</a></td>
+<td>Live Archive</td>
+<td>2000</td>
+<td>World Finals - Orlando</td>
+<td>2</td>
+</tr>
+<tr>
+<td>32</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1033" target="_blank">The Problem with the Problem Setter</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>33</td>
+<td><a href="http://poj.org/problem?id=2226" target="_blank">Muddy Fields</a></td>
+<td>PKU</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>34</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=4663" target="_blank">Handball</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>35</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=4582" target="_blank">It Can Be Arranged</a></td>
+<td>Live Archive</td>
+<td>2013</td>
+<td>Europe - Southwestern</td>
+<td>2</td>
+</tr>
+<tr>
+<td>36</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1021" target="_blank">Gopher II</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>37</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=1032" target="_blank">Cable TV Network</a></td>
+<td>Live Archive</td>
+<td>2004</td>
+<td>Europe - Southeastern</td>
+<td>2</td>
+</tr>
+<tr>
+<td>38</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=3815" target="_blank">Route Redundancy</a></td>
+<td>Live Archive</td>
+<td>2011</td>
+<td>North America - Greater NY</td>
+<td>2</td>
+</tr>
+<tr>
+<td>39</td>
+<td><a href="http://acm.tju.edu.cn/toj/showp2842.html" target="_blank">Course</a></td>
+<td>TJU</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>40</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=928" target="_blank">&quot;Shortest&quot; pair of paths</a></td>
+<td>Live Archive</td>
+<td>2006</td>
+<td>Europe - Southeastern</td>
+<td>2</td>
+</tr>
+<tr>
+<td>41</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=2323" target="_blank">Destroying the bus stations</a></td>
+<td>Live Archive</td>
+<td>2008</td>
+<td>Asia - Beijing</td>
+<td>2</td>
+</tr>
+<tr>
+<td>42</td>
+<td><a href="http://acm.tju.edu.cn/toj/showp1636.html" target="_blank">Going Home</a></td>
+<td>TJU</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>43</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1190" target="_blank">The Grand Dinner</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>44</td>
+<td><a href="http://www.spoj.com/problems/DISJPATH/" target="_blank">Disjoint Paths</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>45</td>
+<td><a href="http://www.spoj.com/problems/MSE06I/" target="_blank">&quot;Shortest&quot; pair of paths </a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>46</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=694" target="_blank">A Plug for UNIX</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>47</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1535" target="_blank">Data Flow</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>48</td>
+<td><a href="http://www.spoj.com/problems/DIVREL/" target="_blank">Divisibility Relation</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>49</td>
+<td><a href="http://www.spoj.com/problems/MOBIVINA/" target="_blank">MobiZone vs VinaGone</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>50</td>
+<td><a href="http://www.spoj.com/problems/STEAD/" target="_blank">Steady Cow Assignment</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>51</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1452" target="_blank">Councilling</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>52</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=504" target="_blank">Crimewave</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>53</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1720" target="_blank">Collectors Problem</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>54</td>
+<td><a href="http://www.spoj.com/problems/PROFIT/" target="_blank">Maximum Profit</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>55</td>
+<td><a href="http://www.spoj.com/problems/TOURS/" target="_blank">Travelling tours</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>56</td>
+<td><a href="http://acm.tju.edu.cn/toj/showp1159.html" target="_blank">A Plug for UNIX</a></td>
+<td>TJU</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>57</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2413" target="_blank">Clever Naming Patterns</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>58</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2375" target="_blank">Down Went The Titanic</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>59</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=3762" target="_blank">Safety Grade</a></td>
+<td>Live Archive</td>
+<td>2011</td>
+<td>Europe - Southeastern</td>
+<td>3</td>
+</tr>
+<tr>
+<td>60</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2414" target="_blank">SAM I AM</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>61</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2100" target="_blank">Factors and Multiples</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>62</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2079" target="_blank">Nuts and Bolts</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>63</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1290" target="_blank">Antenna Placement</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>64</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=611" target="_blank">The dog task</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>65</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=604" target="_blank">Sorting Slides</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>66</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=3690" target="_blank">Pahom on Water</a></td>
+<td>Live Archive</td>
+<td>2011</td>
+<td>South Pacific</td>
+<td>3</td>
+</tr>
+<tr>
+<td>67</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1687" target="_blank">Crime Wave - The Sequel</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>68</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=5918" target="_blank">Kill the Werewolf</a></td>
+<td>Live Archive</td>
+<td>2016</td>
+<td>Latin America</td>
+<td>3</td>
+</tr>
+<tr>
+<td>69</td>
+<td><a href="http://www.spoj.com/problems/GASWARS/" target="_blank">Gas Wars</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>70</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1676" target="_blank">Euler Circuit</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>71</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1924" target="_blank">Buy one, get the rest free</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>72</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2023" target="_blank">Matrix Decompressing</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>73</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2108" target="_blank">Monkeys in the Emei Mountain</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>74</td>
+<td><a href="http://www.spoj.com/problems/AMR12A/" target="_blank">The Black Riders</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>75</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1829" target="_blank">Warehouse</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>76</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3642" target="_blank">Taxi Cab Scheme</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>77</td>
+<td><a href="http://acm.tju.edu.cn/toj/showp2906.html" target="_blank">Gavin's Promise</a></td>
+<td>TJU</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>78</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1930" target="_blank">Bomb, Divide and Conquer</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>79</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3320" target="_blank">Cat vs. Dog</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>80</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3235" target="_blank">Guardian of Decency</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>81</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3635" target="_blank">Machine Schedule</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>82</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3277" target="_blank">March of the Penguins</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>83</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1013" target="_blank">Bob Laptop Woolmer and Eddie Desktop Barlow</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>84</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1745" target="_blank">Gopher Strategy</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>85</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2229" target="_blank">Weird Fence</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>86</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2378" target="_blank">Golden Tiger Claw</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>87</td>
+<td><a href="http://acm.timus.ru/problem.aspx?space=1&num=1774" target="_blank">Barber of the Army of Mages</a></td>
+<td>Timus</td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>88</td>
+<td><a href="http://www.spoj.com/problems/GCPC11I/" target="_blank">Suiting Weavers</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>89</td>
+<td><a href="http://acm.tju.edu.cn/toj/showp1692.html" target="_blank">Cable TV Network</a></td>
+<td>TJU</td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>90</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2276" target="_blank">Great Wall of China</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>91</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3625" target="_blank">Air Raid</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>92</td>
+<td><a href="http://codeforces.com/problemset/problem/589/F" target="_blank">Gourmet and Banquet</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>2015-2016 ACM-ICPC, NEERC, Southern Subregional Contest (Online Mirror, ACM-ICPC Rules, Teams Preferred)</td>
+<td>5</td>
+</tr>
+<tr>
+<td>93</td>
+<td><a href="http://codeforces.com/problemset/problem/546/E" target="_blank">Soldier and Traveling</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #304 (Div. 2)</td>
+<td>5</td>
+</tr>
+<tr>
+<td>94</td>
+<td><a href="http://codeforces.com/problemset/problem/498/C" target="_blank">Array and Operations</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #284 (Div. 1) & Codeforces Round #284 (Div. 2)</td>
+<td>5</td>
+</tr>
+<tr>
+<td>95</td>
+<td><a href="http://codeforces.com/problemset/problem/321/B" target="_blank">Ciel and Duel</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #190 (Div. 1) & Codeforces Round #190 (Div. 2)</td>
+<td>5</td>
+</tr>
+<tr>
+<td>96</td>
+<td><a href="http://acm.tju.edu.cn/toj/showp1891.html" target="_blank">Leapin' Lizards</a></td>
+<td>TJU</td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>97</td>
+<td><a href="http://acm.tju.edu.cn/toj/showp3309.html" target="_blank">Wukong and Tang Monk</a></td>
+<td>TJU</td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>98</td>
+<td><a href="http://acm.tju.edu.cn/toj/showp3551.html" target="_blank">Treasure Hunting</a></td>
+<td>TJU</td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>99</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2660" target="_blank">Acme Corporation</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>100</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1556" target="_blank">Rooks</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>101</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2434" target="_blank">Maximizing the ICPC</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>102</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2641" target="_blank">All Pairs Maximum Flow</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>103</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1321" target="_blank">Shogi Tournament</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>104</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2857" target="_blank">Winger Trial</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>105</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2865" target="_blank">Component Placement</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>106</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3683" target="_blank">Necklace</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>107</td>
+<td><a href="http://codeforces.com/problemset/problem/190/D" target="_blank">Non-Secret Cypher</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #120 (Div. 2)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>108</td>
+<td><a href="http://www.spoj.com/problems/MILPATR/" target="_blank">Military patrol</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>109</td>
+<td><a href="http://codeforces.com/problemset/problem/653/D" target="_blank">Delivery Bears</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>IndiaHacks 2016 - Online Edition (Div. 1 + Div. 2)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>110</td>
+<td><a href="http://codeforces.com/problemset/problem/510/E" target="_blank">Fox And Dinner</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #290 (Div. 2) & Codeforces Round #290 (Div. 1)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>111</td>
+<td><a href="http://codeforces.com/problemset/problem/269/C" target="_blank">Flawed Flow</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #165 (Div. 1) & Codeforces Round #165 (Div. 2)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>112</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=2315" target="_blank">Mining Station on the Sea</a></td>
+<td>Live Archive</td>
+<td>2008</td>
+<td>Asia - Harbin</td>
+<td>6</td>
+</tr>
+<tr>
+<td>113</td>
+<td><a href="http://acm.tju.edu.cn/toj/showp3591.html" target="_blank">Thieves</a></td>
+<td>TJU</td>
+<td></td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>114</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2376" target="_blank">Elegant Strings</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>115</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2650" target="_blank">Its all about the Bandwidth</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>116</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1063" target="_blank">Mysterious Mountain</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>117</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2766" target="_blank">Gridland Airports</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>118</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2343" target="_blank">Faster Processing Feasibility</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>7</td>
+</tr>
+<tr>
+<td>119</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2539" target="_blank">Recruiter's Problem</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>7</td>
+</tr>
+<tr>
+<td>120</td>
+<td><a href="http://codeforces.com/problemset/problem/237/E" target="_blank">Build String</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #147 (Div. 2)</td>
+<td>7</td>
+</tr>
+<tr>
+<td>121</td>
+<td><a href="http://acm.tju.edu.cn/toj/showp2616.html" target="_blank">Budget</a></td>
+<td>TJU</td>
+<td></td>
+<td></td>
+<td>7</td>
+</tr>
+<tr>
+<td>122</td>
+<td><a href="http://codeforces.com/problemset/problem/277/E" target="_blank">Binary Tree on Plane</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #170 (Div. 1)</td>
+<td>7</td>
+</tr>
+<tr>
+<td>123</td>
+<td><a href="http://acm.tju.edu.cn/toj/showp3672.html" target="_blank">Task Schedule</a></td>
+<td>TJU</td>
+<td></td>
+<td></td>
+<td>7</td>
+</tr>
+<tr>
+<td>124</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=4417" target="_blank">It Can Be Arranged</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>7</td>
+</tr>
+<tr>
+<td>125</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=6008" target="_blank">Delivering Goods</a></td>
+<td>Live Archive</td>
+<td>2016</td>
+<td> 	North America - North Central NA & North America - Rocky Mountain</td>
+<td>7</td>
+</tr>
+<tr>
+<td>126</td>
+<td><a href="http://codeforces.com/problemset/problem/164/C" target="_blank">Machine Programming</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>VK Cup 2012 Round 3</td>
+<td>8</td>
+</tr>
+<tr>
+<td>127</td>
+<td><a href="http://codeforces.com/problemset/problem/362/E" target="_blank">Petya and Pipes</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #212 (Div. 2)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>128</td>
+<td><a href="http://codeforces.com/problemset/problem/316/C2" target="_blank">Tidying Up</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>ABBYY Cup 3.0</td>
+<td>8</td>
+</tr>
+<tr>
+<td>129</td>
+<td><a href="http://codeforces.com/problemset/problem/316/C1" target="_blank">Tidying Up</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>ABBYY Cup 3.0</td>
+<td>8</td>
+</tr>
+<tr>
+<td>130</td>
+<td><a href="http://codeforces.com/problemset/problem/280/D" target="_blank">k-Maximum Subsequence Sum</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #172 (Div. 1)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>131</td>
+<td><a href="http://acm.tju.edu.cn/toj/showp3555.html" target="_blank">HS BDC</a></td>
+<td>TJU</td>
+<td></td>
+<td></td>
+<td>8</td>
+</tr>
+<tr>
+<td>132</td>
+<td><a href="http://acm.tju.edu.cn/toj/showp3526.html" target="_blank">A New Graph Game</a></td>
+<td>TJU</td>
+<td></td>
+<td></td>
+<td>8</td>
+</tr>
+<tr>
+<td>133</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3529" target="_blank">Subway Timing</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>8</td>
+</tr>
+<tr>
+<td>134</td>
+<td><a href="http://codeforces.com/problemset/problem/739/E" target="_blank">Gosha is hunting</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #381 (Div. 1)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>135</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2689" target="_blank">Bangladesh Premier League</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>9</td>
+</tr>
+<tr>
+<td>136</td>
+<td><a href="http://codeforces.com/problemset/problem/132/E" target="_blank">Bits of merry old England</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Beta Round #96 (Div. 1)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>137</td>
+<td><a href="http://codeforces.com/problemset/problem/103/E" target="_blank">Buying Sets</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Beta Round #80 (Div. 1 Only)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>138</td>
+<td><a href="http://codeforces.com/problemset/problem/78/E" target="_blank">Evacuation</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Beta Round #70 (Div. 2)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>139</td>
+<td><a href="http://codeforces.com/problemset/problem/628/F" target="_blank">Bear and Fair Set</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Educational Codeforces Round 8</td>
+<td>9</td>
+</tr>
+<tr>
+<td>140</td>
+<td><a href="http://codeforces.com/problemset/problem/513/F2" target="_blank">Scaygerboss</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Rockethon 2015</td>
+<td>9</td>
+</tr>
+<tr>
+<td>141</td>
+<td><a href="http://codeforces.com/problemset/problem/513/F1" target="_blank">Scaygerboss</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Rockethon 2015</td>
+<td>9</td>
+</tr>
+<tr>
+<td>142</td>
+<td><a href="http://codeforces.com/problemset/problem/491/C" target="_blank">Deciphering</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Testing Round #11</td>
+<td>9</td>
+</tr>
+<tr>
+<td>143</td>
+<td><a href="http://codeforces.com/problemset/problem/434/D" target="_blank">Nanami's Power Plant</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #248 (Div. 1)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>144</td>
+<td><a href="http://codeforces.com/problemset/problem/343/E" target="_blank">Pumping Stations</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #200 (Div. 1)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>145</td>
+<td><a href="http://codeforces.com/problemset/problem/311/E" target="_blank">Biologist</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #185 (Div. 1)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>146</td>
+<td><a href="http://acm.tju.edu.cn/toj/showp3874.html" target="_blank">Seikimatsu Occult Tonneru</a></td>
+<td>TJU</td>
+<td></td>
+<td></td>
+<td>9</td>
+</tr>
+<tr>
+<td>147</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2694" target="_blank">Judgment Day</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>9</td>
+</tr>
+<tr>
+<td>148</td>
+<td><a href="http://codeforces.com/problemset/problem/212/A" target="_blank">Privatization</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>VK Cup 2012 Finals (unofficial online-version)</td>
+<td>10</td>
+</tr>
+<tr>
+<td>149</td>
+<td><a href="http://codeforces.com/problemset/problem/126/E" target="_blank">Pills</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Beta Round #93 (Div. 1 Only)</td>
+<td>10</td>
+</tr>
+<tr>
+<td>150</td>
+<td><a href="http://codeforces.com/problemset/problem/62/E" target="_blank">World Evil</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Beta Round #58</td>
+<td>10</td>
+</tr>
+<tr>
+<td>151</td>
+<td><a href="http://www.spoj.com/problems/MAXFLOWW/" target="_blank">Max Flow Minimum Cost</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>10</td>
+</tr>
+<tr>
+<td>152</td>
+<td><a href="p?ID=226" target="_blank">Critical Network Lines</a></td>
+<td>A2 Online Judge</td>
+<td></td>
+<td></td>
+<td>10</td>
+</tr>
+<tr>
+<td>153</td>
+<td><a href="http://codeforces.com/problemset/problem/611/H" target="_blank">New Year  and Forgotten Tree</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Good Bye 2015</td>
+<td>10</td>
+</tr>
+<tr>
+<td>154</td>
+<td><a href="http://codeforces.com/problemset/problem/457/E" target="_blank">Flow Optimality</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>MemSQL Start[c]UP 2.0 - Round 2</td>
+<td>10</td>
+</tr>
+<tr>
+<td>155</td>
+<td><a href="http://codeforces.com/problemset/problem/223/E" target="_blank">Planar Graph</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #138 (Div. 1)</td>
+<td>10</td>
+</tr>
+<tr>
+<td>156</td>
+<td><a href="http://codeforces.com/problemset/problem/736/E" target="_blank">Chess Championship</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #382 (Div. 1)</td>
+<td>10</td>
+</tr>
+<tr>
+<td>157</td>
+<td><a href="http://codeforces.com/problemset/problem/848/D" target="_blank">Shake It!</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #431 (Div. 1)</td>
+<td>10</td>
+</tr>
+<tr>
+<td>158</td>
+<td><a href="http://codeforces.com/problemset/problem/786/E" target="_blank">ALT</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #406 (Div. 1)</td>
+<td>10</td>
+</tr>
+<tr>
+<td>159</td>
+<td><a href="http://codeforces.com/problemset/problem/704/D" target="_blank">Captain America</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #366 (Div. 1)</td>
+<td>10</td>
+</tr>
+</table>
+</center>
+</body>
+</html>

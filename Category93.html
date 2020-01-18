@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<title>A2OJ Category: hashing</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+</style>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push( [ '_setAccount', 'UA-16947566-3' ]);
+	_gaq.push( [ '_trackPageview' ]);
+
+	( function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+				: 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</head>
+<body><script src="fetcher.js"></script>
+<center>
+<font size=4>
+<b>
+<u>
+hashing problems</u></b></font><br/><br/>
+<table>
+<tr>
+<th></th>
+<th>Problem Name</th>
+<th>Online Judge</th>
+<th>Contest</th>
+<th>Difficulty Level</th>
+</tr>
+<tr>
+<td>1</td>
+<td><a href="http://codeforces.com/problemset/problem/4/C" target="_blank">Registration System</a></td>
+<td>Codeforces</td>
+<td>Codeforces Beta Round #4 (Div. 2 Only)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="http://codeforces.com/problemset/problem/525/A" target="_blank">Vitaliy and Pie</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #297 (Div. 2)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="http://codeforces.com/problemset/problem/2/A" target="_blank">Winner</a></td>
+<td>Codeforces</td>
+<td>Codeforces Beta Round #2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="http://codeforces.com/problemset/problem/486/B" target="_blank">OR in Matrix</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #277 (Div. 2)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="http://codeforces.com/problemset/problem/574/B" target="_blank">Bear and Three Musketeers</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #318 [RussianCodeCup Thanks-Round] (Div. 2)</td>
+<td>2</td>
+</tr>
+<tr>
+<td>6</td>
+<td><a href="http://codeforces.com/problemset/problem/126/B" target="_blank">Password</a></td>
+<td>Codeforces</td>
+<td>Codeforces Beta Round #93 (Div. 1 Only) & Codeforces Beta Round #93 (Div. 2 Only)</td>
+<td>2</td>
+</tr>
+<tr>
+<td>7</td>
+<td><a href="http://www.spoj.com/problems/ACMCEG2B/" target="_blank">FIGUREFUL</a></td>
+<td>SPOJ</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>8</td>
+<td><a href="http://codeforces.com/problemset/problem/559/B" target="_blank">Equivalent Strings</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #313 (Div. 1) & Codeforces Round #313 (Div. 2)</td>
+<td>2</td>
+</tr>
+<tr>
+<td>9</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1853" target="_blank">Simple Minded Hashing</a></td>
+<td>UVA</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="http://codeforces.com/problemset/problem/271/D" target="_blank">Good Substrings</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #166 (Div. 2)</td>
+<td>3</td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="http://codeforces.com/problemset/problem/463/C" target="_blank">Gargari and Bishops</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #264 (Div. 2)</td>
+<td>3</td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="http://vn.spoj.com/problems/MESSAGE1/" target="_blank">VOI 2013 - Trao ?&amp;#7893;i th&ocirc;ng tin</a></td>
+<td>SPOJ Vietnam</td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="http://codeforces.com/problemset/problem/182/D" target="_blank">Common Divisors</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #117 (Div. 2)</td>
+<td>3</td>
+</tr>
+<tr>
+<td>14</td>
+<td><a href="http://codeforces.com/problemset/problem/514/C" target="_blank">Watto and Mechanism</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #291 (Div. 2)</td>
+<td>3</td>
+</tr>
+<tr>
+<td>15</td>
+<td><a href="http://codeforces.com/problemset/problem/479/D" target="_blank">Long Jumps</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #274 (Div. 2) & Codeforces Round #274 (Div. 1)</td>
+<td>3</td>
+</tr>
+<tr>
+<td>16</td>
+<td><a href="http://codeforces.com/problemset/problem/255/C" target="_blank">Almost Arithmetical Progression</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #156 (Div. 2) & Codeforces Round #156 (Div. 1)</td>
+<td>4</td>
+</tr>
+<tr>
+<td>17</td>
+<td><a href="http://codeforces.com/problemset/problem/245/H" target="_blank">Queries for Number of Palindromes</a></td>
+<td>Codeforces</td>
+<td>CROC-MBTU 2012, Elimination Round (ACM-ICPC)</td>
+<td>4</td>
+</tr>
+<tr>
+<td>18</td>
+<td><a href="http://codeforces.com/problemset/problem/242/C" target="_blank">King's Path</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #149 (Div. 2)</td>
+<td>4</td>
+</tr>
+<tr>
+<td>19</td>
+<td><a href="http://codeforces.com/problemset/problem/535/D" target="_blank">Tavas and Malekas</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #299 (Div. 2) & Codeforces Round #299 (Div. 1)</td>
+<td>4</td>
+</tr>
+<tr>
+<td>20</td>
+<td><a href="http://codeforces.com/problemset/problem/8/A" target="_blank">Train and Peter</a></td>
+<td>Codeforces</td>
+<td>Codeforces Beta Round #8</td>
+<td>4</td>
+</tr>
+<tr>
+<td>21</td>
+<td><a href="http://codeforces.com/problemset/problem/169/B" target="_blank">Replacing Digits</a></td>
+<td>Codeforces</td>
+<td>VK Cup 2012 Round 2 (Unofficial Div. 2 Edition)</td>
+<td>5</td>
+</tr>
+<tr>
+<td>22</td>
+<td><a href="http://codeforces.com/problemset/problem/533/E" target="_blank">Correcting Mistakes</a></td>
+<td>Codeforces</td>
+<td>VK Cup 2015 - Round 2 (unofficial online mirror, Div. 1 only)</td>
+<td>5</td>
+</tr>
+<tr>
+<td>23</td>
+<td><a href="http://codeforces.com/problemset/problem/633/D" target="_blank">Fibonacci-ish</a></td>
+<td>Codeforces</td>
+<td>Manthan, Codefest 16</td>
+<td>5</td>
+</tr>
+<tr>
+<td>24</td>
+<td><a href="http://codeforces.com/problemset/problem/633/C" target="_blank">Spy Syndrome 2</a></td>
+<td>Codeforces</td>
+<td>Manthan, Codefest 16</td>
+<td>5</td>
+</tr>
+<tr>
+<td>25</td>
+<td><a href="http://codeforces.com/problemset/problem/113/B" target="_blank">Petr#</a></td>
+<td>Codeforces</td>
+<td>Codeforces Beta Round #86 (Div. 1 Only) & Codeforces Beta Round #86 (Div. 2 Only)</td>
+<td>5</td>
+</tr>
+<tr>
+<td>26</td>
+<td><a href="http://codeforces.com/problemset/problem/82/B" target="_blank">Sets</a></td>
+<td>Codeforces</td>
+<td>Yandex.Algorithm 2011 Qualification 2</td>
+<td>5</td>
+</tr>
+<tr>
+<td>27</td>
+<td><a href="http://codeforces.com/problemset/problem/611/D" target="_blank">New Year and Ancient Prophecy</a></td>
+<td>Codeforces</td>
+<td>Good Bye 2015</td>
+<td>5</td>
+</tr>
+<tr>
+<td>28</td>
+<td><a href="http://codeforces.com/problemset/problem/7/D" target="_blank">Palindrome Degree</a></td>
+<td>Codeforces</td>
+<td>Codeforces Beta Round #7</td>
+<td>5</td>
+</tr>
+<tr>
+<td>29</td>
+<td><a href="http://codeforces.com/problemset/problem/580/E" target="_blank">Kefa and Watch</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #321 (Div. 2)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>30</td>
+<td><a href="http://codeforces.com/problemset/problem/467/D" target="_blank">Fedor and Essay</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #267 (Div. 2)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>31</td>
+<td><a href="http://codeforces.com/problemset/problem/154/C" target="_blank">Double Profiles</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #109 (Div. 1) & Codeforces Round #109 (Div. 2)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>32</td>
+<td><a href="http://codeforces.com/problemset/problem/39/J" target="_blank">Spelling Check</a></td>
+<td>Codeforces</td>
+<td>School Team Contest #1 (Winter Computer School 2010/11)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>33</td>
+<td><a href="http://codeforces.com/problemset/problem/639/C" target="_blank">Bear and Polynomials</a></td>
+<td>Codeforces</td>
+<td>VK Cup 2016 - Round 1</td>
+<td>6</td>
+</tr>
+<tr>
+<td>34</td>
+<td><a href="http://codeforces.com/problemset/problem/128/B" target="_blank">String</a></td>
+<td>Codeforces</td>
+<td>Codeforces Beta Round #94 (Div. 1 Only) & Codeforces Beta Round #94 (Div. 2 Only)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>35</td>
+<td><a href="http://codeforces.com/problemset/problem/526/D" target="_blank">Om Nom and Necklace</a></td>
+<td>Codeforces</td>
+<td>ZeptoLab Code Rush 2015</td>
+<td>6</td>
+</tr>
+<tr>
+<td>36</td>
+<td><a href="http://codeforces.com/problemset/problem/25/E" target="_blank">Test</a></td>
+<td>Codeforces</td>
+<td>Codeforces Beta Round #25 (Div. 2 Only)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>37</td>
+<td><a href="http://codeforces.com/problemset/problem/631/D" target="_blank">Messenger</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #344 (Div. 2)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>38</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=4282" target="_blank">Caesar Cipher</a></td>
+<td>UVA</td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>39</td>
+<td><a href="http://codeforces.com/problemset/problem/79/C" target="_blank">Beaver</a></td>
+<td>Codeforces</td>
+<td>Codeforces Beta Round #71</td>
+<td>6</td>
+</tr>
+<tr>
+<td>40</td>
+<td><a href="http://codeforces.com/problemset/problem/486/E" target="_blank">LIS of Sequence</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #277 (Div. 2)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>41</td>
+<td><a href="http://codeforces.com/problemset/problem/601/D" target="_blank">Acyclic Organic Compounds</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #333 (Div. 1)</td>
+<td>7</td>
+</tr>
+<tr>
+<td>42</td>
+<td><a href="http://codeforces.com/problemset/problem/533/F" target="_blank">Encoding</a></td>
+<td>Codeforces</td>
+<td>VK Cup 2015 - Round 2 (unofficial online mirror, Div. 1 only)</td>
+<td>7</td>
+</tr>
+<tr>
+<td>43</td>
+<td><a href="http://codeforces.com/problemset/problem/778/C" target="_blank">Peterson Polyglot</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #402 (Div. 1) & Codeforces Round #402 (Div. 2)</td>
+<td>7</td>
+</tr>
+<tr>
+<td>44</td>
+<td><a href="http://codeforces.com/problemset/problem/316/G1" target="_blank">Good Substrings</a></td>
+<td>Codeforces</td>
+<td>ABBYY Cup 3.0</td>
+<td>7</td>
+</tr>
+<tr>
+<td>45</td>
+<td><a href="http://codeforces.com/problemset/problem/567/E" target="_blank">President and Roads</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #Pi (Div. 2)</td>
+<td>7</td>
+</tr>
+<tr>
+<td>46</td>
+<td><a href="http://codeforces.com/problemset/problem/869/E" target="_blank">The Untended Antiquity</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #439 (Div. 2)</td>
+<td>7</td>
+</tr>
+<tr>
+<td>47</td>
+<td><a href="http://www.spoj.com/problems/VEXPROF/" target="_blank">The angry professor</a></td>
+<td>SPOJ</td>
+<td></td>
+<td>7</td>
+</tr>
+<tr>
+<td>48</td>
+<td><a href="http://codeforces.com/problemset/problem/425/D" target="_blank">Sereja and Squares</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #243 (Div. 1)</td>
+<td>7</td>
+</tr>
+<tr>
+<td>49</td>
+<td><a href="http://codeforces.com/problemset/problem/291/E" target="_blank">Tree-String Problem</a></td>
+<td>Codeforces</td>
+<td>Croc Champ 2013 - Qualification Round</td>
+<td>7</td>
+</tr>
+<tr>
+<td>50</td>
+<td><a href="http://codeforces.com/problemset/problem/190/E" target="_blank">Counter Attack</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #120 (Div. 2)</td>
+<td>7</td>
+</tr>
+<tr>
+<td>51</td>
+<td><a href="http://codeforces.com/problemset/problem/607/C" target="_blank">Marbles</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #336 (Div. 1) & Codeforces Round #336 (Div. 2)</td>
+<td>7</td>
+</tr>
+<tr>
+<td>52</td>
+<td><a href="http://codeforces.com/problemset/problem/54/B" target="_blank">Cutting Jigsaw Puzzle</a></td>
+<td>Codeforces</td>
+<td>Codeforces Beta Round #50</td>
+<td>8</td>
+</tr>
+<tr>
+<td>53</td>
+<td><a href="http://codeforces.com/problemset/problem/30/E" target="_blank">Tricky and Clever Password</a></td>
+<td>Codeforces</td>
+<td>Codeforces Beta Round #30 (Codeforces format)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>54</td>
+<td><a href="http://codeforces.com/problemset/problem/452/F" target="_blank">Permutation</a></td>
+<td>Codeforces</td>
+<td>MemSQL Start[c]UP 2.0 - Round 1</td>
+<td>8</td>
+</tr>
+<tr>
+<td>55</td>
+<td><a href="http://codeforces.com/problemset/problem/228/C" target="_blank">Fractal Detector</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #141 (Div. 2)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>56</td>
+<td><a href="http://codeforces.com/problemset/problem/28/D" target="_blank">Don't fear, DravDe is kind</a></td>
+<td>Codeforces</td>
+<td>Codeforces Beta Round #28 (Codeforces format)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>57</td>
+<td><a href="http://codeforces.com/problemset/problem/444/D" target="_blank">DZY Loves Strings</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #254 (Div. 1)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>58</td>
+<td><a href="http://codeforces.com/problemset/problem/213/E" target="_blank">Two Permutations</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #131 (Div. 1)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>59</td>
+<td><a href="http://codeforces.com/problemset/problem/898/F" target="_blank">Restoring the Expression</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #451 (Div. 2)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>60</td>
+<td><a href="http://codeforces.com/problemset/problem/19/C" target="_blank">Deletion of Repeats</a></td>
+<td>Codeforces</td>
+<td>Codeforces Beta Round #19</td>
+<td>8</td>
+</tr>
+<tr>
+<td>61</td>
+<td><a href="http://codeforces.com/problemset/problem/319/D" target="_blank">Have You Ever Heard About the Word?</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #189 (Div. 1)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>62</td>
+<td><a href="http://codeforces.com/problemset/problem/763/D" target="_blank">Timofey and a flat tree</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #395 (Div. 1)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>63</td>
+<td><a href="http://codeforces.com/problemset/problem/119/D" target="_blank">String Transformation</a></td>
+<td>Codeforces</td>
+<td>Codeforces Beta Round #90</td>
+<td>9</td>
+</tr>
+<tr>
+<td>64</td>
+<td><a href="http://codeforces.com/problemset/problem/542/D" target="_blank">Superhero's Job</a></td>
+<td>Codeforces</td>
+<td>VK Cup 2015 - Round 3 (unofficial online mirror, Div. 1 only)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>65</td>
+<td><a href="http://codeforces.com/problemset/problem/524/F" target="_blank">And Yet Another Bracket Sequence</a></td>
+<td>Codeforces</td>
+<td>VK Cup 2015 - Round 1</td>
+<td>9</td>
+</tr>
+<tr>
+<td>66</td>
+<td><a href="http://codeforces.com/problemset/problem/212/B" target="_blank">Polycarpus is Looking for Good Substrings</a></td>
+<td>Codeforces</td>
+<td>VK Cup 2012 Finals (unofficial online-version)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>67</td>
+<td><a href="http://codeforces.com/problemset/problem/407/D" target="_blank">Largest Submatrix 3</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #239 (Div. 1)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>68</td>
+<td><a href="http://codeforces.com/problemset/problem/196/D" target="_blank">The Next Good String</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #124 (Div. 1)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>69</td>
+<td><a href="http://codeforces.com/problemset/problem/534/F" target="_blank">Simplified Nonogram</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #298 (Div. 2)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>70</td>
+<td><a href="http://codeforces.com/problemset/problem/356/E" target="_blank">Xenia and String Problem</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #207 (Div. 1)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>71</td>
+<td><a href="http://codeforces.com/problemset/problem/65/D" target="_blank">Harry Potter and the Sorting Hat</a></td>
+<td>Codeforces</td>
+<td>Codeforces Beta Round #60</td>
+<td>9</td>
+</tr>
+<tr>
+<td>72</td>
+<td><a href="http://codeforces.com/problemset/problem/534/E" target="_blank">Berland Local Positioning System</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #298 (Div. 2)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>73</td>
+<td><a href="http://codeforces.com/problemset/problem/786/D" target="_blank">Rap God</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #406 (Div. 1)</td>
+<td>10</td>
+</tr>
+<tr>
+<td>74</td>
+<td><a href="http://codeforces.com/problemset/problem/613/E" target="_blank">Puzzle Lover</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #339 (Div. 1)</td>
+<td>10</td>
+</tr>
+<tr>
+<td>75</td>
+<td><a href="http://codeforces.com/problemset/problem/504/E" target="_blank">Misha and LCP on Tree</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #285 (Div. 1)</td>
+<td>10</td>
+</tr>
+<tr>
+<td>76</td>
+<td><a href="http://codeforces.com/problemset/problem/350/D" target="_blank">Looking for Owls</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #203 (Div. 2)</td>
+<td>10</td>
+</tr>
+</table>
+</center>
+</body>
+</html>

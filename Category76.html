@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<title>A2OJ Category: bfs</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+</style>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push( [ '_setAccount', 'UA-16947566-3' ]);
+	_gaq.push( [ '_trackPageview' ]);
+
+	( function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+				: 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</head>
+<body><script src="fetcher.js"></script>
+<center>
+<font size=4>
+<b>
+<u>
+bfs problems</u></b></font><br/><br/>
+<table>
+<tr>
+<th></th>
+<th>Problem Name</th>
+<th>Online Judge</th>
+<th>Contest</th>
+<th>Difficulty Level</th>
+</tr>
+<tr>
+<td>1</td>
+<td><a href="http://www.spoj.com/problems/WATER/" target="_blank">Water among Cubes</a></td>
+<td>SPOJ</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=865" target="_blank">Spreading The News</a></td>
+<td>UVA</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="http://acm.timus.ru/problem.aspx?space=1&num=1837" target="_blank">Isenbaev's Number</a></td>
+<td>Timus</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=950" target="_blank">All Roads Lead Where?</a></td>
+<td>UVA</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="http://www.spoj.com/problems/CATM/" target="_blank">The Cats and the Mouse</a></td>
+<td>SPOJ</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>6</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=272" target="_blank">A Node Too Far</a></td>
+<td>UVA</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>7</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1008" target="_blank">Playing with Wheels</a></td>
+<td>UVA</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>8</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1594" target="_blank">Bombs! NO they are Mines!!</a></td>
+<td>UVA</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>9</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=945" target="_blank">Bicoloring</a></td>
+<td>UVA</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="http://www.spoj.com/problems/CLEANRBT/" target="_blank">Cleaning Robot</a></td>
+<td>SPOJ</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=380" target="_blank">Knight Moves</a></td>
+<td>UVA</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="http://www.spoj.com/problems/TOE2/" target="_blank">Tic-Tac-Toe ( II )</a></td>
+<td>SPOJ</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="http://www.spoj.com/problems/MLASERP/" target="_blank">Laser Phones</a></td>
+<td>SPOJ</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>14</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=473" target="_blank">Dungeon Master</a></td>
+<td>UVA</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>15</td>
+<td><a href="http://www.spoj.com/problems/BITMAP/" target="_blank">Bitmap</a></td>
+<td>SPOJ</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>16</td>
+<td><a href="http://www.spoj.com/problems/PPATH/" target="_blank">Prime Path</a></td>
+<td>SPOJ</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>17</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=508" target="_blank">Risk</a></td>
+<td>UVA</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>18</td>
+<td><a href="http://www.spoj.com/problems/ONEZERO/" target="_blank">Ones and zeros</a></td>
+<td>SPOJ</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>19</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=703" target="_blank">We Ship Cheap</a></td>
+<td>UVA</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>20</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=512" target="_blank">Jugs</a></td>
+<td>UVA</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>21</td>
+<td><a href="http://www.spoj.com/problems/CHMAZE/" target="_blank">Changing Maze</a></td>
+<td>SPOJ</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>22</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=319" target="_blank">Shipping Routes</a></td>
+<td>UVA</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>23</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1900" target="_blank">The Party, Part I</a></td>
+<td>UVA</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>24</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2327" target="_blank">Crazy King</a></td>
+<td>UVA</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>25</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=988" target="_blank">The Monocycle</a></td>
+<td>UVA</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>26</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2671" target="_blank">Fire!</a></td>
+<td>UVA</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>27</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=568" target="_blank">The Net</a></td>
+<td>UVA</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>28</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=257" target="_blank">The New Villa</a></td>
+<td>UVA</td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>29</td>
+<td><a href="http://www.spoj.com/problems/STAR3CAS/" target="_blank">THE WEIRD STAIRCASE</a></td>
+<td>SPOJ</td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>30</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2508" target="_blank">9 Puzzle</a></td>
+<td>UVA</td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>31</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1918" target="_blank">Enchanted Forest</a></td>
+<td>UVA</td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>32</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=869" target="_blank">Eternal Truths</a></td>
+<td>UVA</td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>33</td>
+<td><a href="http://codeforces.com/problemset/problem/1037/D" target="_blank">Valid BFS?</a></td>
+<td>Codeforces</td>
+<td>Manthan, Codefest 18 (rated, Div. 1 + Div. 2)</td>
+<td>3</td>
+</tr>
+<tr>
+<td>34</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3125" target="_blank">Switch The Lights</a></td>
+<td>UVA</td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>35</td>
+<td><a href="http://www.spoj.com/problems/GRAVITY/" target="_blank">GRAVITY</a></td>
+<td>SPOJ</td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>36</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3692" target="_blank">Repeated Substitution with Sed</a></td>
+<td>UVA</td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>37</td>
+<td><a href="http://community.topcoder.com/stat?c=problem_statement&pm=4582" target="_blank">TwoKings</a></td>
+<td>TopCoder</td>
+<td>SRM 243 - Div1 hard] (7218)</td>
+<td>9</td>
+</tr>
+</table>
+</center>
+</body>
+</html>

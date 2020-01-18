@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<title>A2OJ Category: Maximum Matching / Vertex Cover on Bipartite Graph</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+</style>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push( [ '_setAccount', 'UA-16947566-3' ]);
+	_gaq.push( [ '_trackPageview' ]);
+
+	( function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+				: 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</head>
+<body><script src="fetcher.js"></script>
+<center>
+<font size=4>
+<b>
+<u>
+Maximum Matching / Vertex Cover on Bipartite Graph problems</u></b></font><br/><br/>
+<table>
+<tr>
+<th></th>
+<th>Problem Name</th>
+<th>Online Judge</th>
+<th>Year</th>
+<th>Contest</th>
+<th>Difficulty Level</th>
+</tr>
+<tr>
+<td>1</td>
+<td><a href="http://www.spoj.com/problems/MATCHING/" target="_blank">Fast Maximum Matching</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="http://codeforces.com/problemset/problem/337/A" target="_blank">Puzzles</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #196 (Div. 2)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="http://codeforces.com/problemset/problem/489/B" target="_blank">BerSU Ball</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #277.5 (Div. 2)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="http://www.spoj.com/problems/QUEST4/" target="_blank">Dungeon of Death</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="http://www.spoj.com/problems/PT07X/" target="_blank">Vertex Cover</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>6</td>
+<td><a href="http://codeforces.com/problemset/problem/266/B" target="_blank">Queue at the School</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #163 (Div. 2)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>7</td>
+<td><a href="http://www.spoj.com/problems/TAXI/" target="_blank">Taxi</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>8</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1986" target="_blank">My T-shirt suits me</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>9</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=195" target="_blank">Software Allocation</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="http://www.spoj.com/problems/ANGELS/" target="_blank">Angels and Devils</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="http://acm.tju.edu.cn/toj/showp2184.html" target="_blank">Computer Games II</a></td>
+<td>TJU</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1021" target="_blank">Gopher II</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="http://www.spoj.com/problems/MUDDY/" target="_blank">Muddy Fields</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>14</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1033" target="_blank">The Problem with the Problem Setter</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>15</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2414" target="_blank">SAM I AM</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>16</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2079" target="_blank">Nuts and Bolts</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>17</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1452" target="_blank">Councilling</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>18</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2100" target="_blank">Factors and Multiples</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>19</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=611" target="_blank">The dog task</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>20</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1290" target="_blank">Antenna Placement</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>21</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=4503" target="_blank">Welcome Party</a></td>
+<td>Live Archive</td>
+<td>2013</td>
+<td>North America - Mid-Central USA</td>
+<td>3</td>
+</tr>
+<tr>
+<td>22</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1745" target="_blank">Gopher Strategy</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>23</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=4406" target="_blank">Attacking rooks</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>24</td>
+<td><a href="http://codeforces.com/problemset/problem/468/B" target="_blank">Two Sets</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #268 (Div. 1) & Codeforces Round #268 (Div. 2)</td>
+<td>4</td>
+</tr>
+<tr>
+<td>25</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2229" target="_blank">Weird Fence</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>26</td>
+<td><a href="https://www.urionlinejudge.com.br/judge/en/problems/view/1490" target="_blank">Attacking Rooks</a></td>
+<td>URI</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>27</td>
+<td><a href="http://codeforces.com/problemset/problem/515/D" target="_blank">Drazil and Tiles</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #292 (Div. 2) & Codeforces Round #292 (Div. 1)</td>
+<td>4</td>
+</tr>
+<tr>
+<td>28</td>
+<td><a href="http://codeforces.com/problemset/problem/142/B" target="_blank">Help General</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #102 (Div. 1) & Codeforces Round #102 (Div. 2)</td>
+<td>5</td>
+</tr>
+<tr>
+<td>29</td>
+<td><a href="http://codeforces.com/problemset/problem/498/C" target="_blank">Array and Operations</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #284 (Div. 1) & Codeforces Round #284 (Div. 2)</td>
+<td>5</td>
+</tr>
+<tr>
+<td>30</td>
+<td><a href="http://codeforces.com/problemset/problem/190/D" target="_blank">Non-Secret Cypher</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #120 (Div. 2)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>31</td>
+<td><a href="http://codeforces.com/problemset/problem/618/D" target="_blank">Hamiltonian Spanning Tree</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Wunder Fund Round 2016 (Div. 1 + Div. 2 combined)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>32</td>
+<td><a href="http://codeforces.com/problemset/problem/510/E" target="_blank">Fox And Dinner</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #290 (Div. 2) & Codeforces Round #290 (Div. 1)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>33</td>
+<td><a href="http://codeforces.com/problemset/problem/290/C" target="_blank">WTF?</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>April Fools Day Contest 2013</td>
+<td>6</td>
+</tr>
+<tr>
+<td>34</td>
+<td><a href="http://codeforces.com/problemset/problem/120/H" target="_blank">Brevity is Soul of Wit</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>School Regional Team Contest, Saratov, 2011</td>
+<td>7</td>
+</tr>
+<tr>
+<td>35</td>
+<td><a href="http://codeforces.com/problemset/problem/387/D" target="_blank">George and Interesting Graph</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #227 (Div. 2)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>36</td>
+<td><a href="http://codeforces.com/problemset/problem/353/E" target="_blank">Antichain</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #205 (Div. 2)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>37</td>
+<td><a href="http://codeforces.com/problemset/problem/316/C2" target="_blank">Tidying Up</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>ABBYY Cup 3.0</td>
+<td>8</td>
+</tr>
+<tr>
+<td>38</td>
+<td><a href="http://codeforces.com/problemset/problem/21/D" target="_blank">Traveling Graph</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Alpha Round #21 (Codeforces format)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>39</td>
+<td><a href="http://codeforces.com/problemset/problem/590/E" target="_blank">Birthday</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #327 (Div. 1)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>40</td>
+<td><a href="http://codeforces.com/problemset/problem/166/D" target="_blank">Shoe Store</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #113 (Div. 2)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>41</td>
+<td><a href="http://codeforces.com/problemset/problem/491/C" target="_blank">Deciphering</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Testing Round #11</td>
+<td>9</td>
+</tr>
+<tr>
+<td>42</td>
+<td><a href="http://codeforces.com/problemset/problem/103/E" target="_blank">Buying Sets</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Beta Round #80 (Div. 1 Only)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>43</td>
+<td><a href="http://codeforces.com/problemset/problem/86/B" target="_blank">Tetris revisited</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Yandex.Algorithm 2011 Round 2</td>
+<td>9</td>
+</tr>
+<tr>
+<td>44</td>
+<td><a href="http://codeforces.com/problemset/problem/167/D" target="_blank">Wizards and Roads</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #114 (Div. 1)</td>
+<td>10</td>
+</tr>
+<tr>
+<td>45</td>
+<td><a href="http://codeforces.com/problemset/problem/575/C" target="_blank">Party</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Bubble Cup 8 - Finals [Online Mirror]</td>
+<td>10</td>
+</tr>
+<tr>
+<td>46</td>
+<td><a href="http://codeforces.com/problemset/problem/891/D" target="_blank">Sloth</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #446 (Div. 1)</td>
+<td>10</td>
+</tr>
+<tr>
+<td>47</td>
+<td><a href="http://codeforces.com/problemset/problem/739/D" target="_blank">Recover a functional graph</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #381 (Div. 1)</td>
+<td>10</td>
+</tr>
+<tr>
+<td>48</td>
+<td><a href="http://br.spoj.com/problems/FLIPERA2/" target="_blank">Fliperama</a></td>
+<td>SPOJ Brazil</td>
+<td></td>
+<td></td>
+<td>10</td>
+</tr>
+<tr>
+<td>49</td>
+<td><a href="http://codeforces.com/problemset/problem/468/E" target="_blank">Permanent</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #268 (Div. 1)</td>
+<td>10</td>
+</tr>
+<tr>
+<td>50</td>
+<td><a href="http://codeforces.com/problemset/problem/468/D" target="_blank">Tree</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #268 (Div. 1)</td>
+<td>10</td>
+</tr>
+</table>
+</center>
+</body>
+</html>

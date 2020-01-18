@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<title>A2OJ Category: FFT</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+</style>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push( [ '_setAccount', 'UA-16947566-3' ]);
+	_gaq.push( [ '_trackPageview' ]);
+
+	( function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+				: 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</head>
+<body><script src="fetcher.js"></script>
+<center>
+<font size=4>
+<b>
+<u>
+FFT problems</u></b></font><br/><br/>
+<table>
+<tr>
+<th></th>
+<th>Problem Name</th>
+<th>Online Judge</th>
+<th>Contest</th>
+<th>Difficulty Level</th>
+</tr>
+<tr>
+<td>1</td>
+<td><a href="http://www.spoj.com/problems/MUL/" target="_blank">Fast Multiplication</a></td>
+<td>SPOJ</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="http://www.spoj.com/problems/POLYMUL/" target="_blank">Polynomial Multiplication</a></td>
+<td>SPOJ</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="http://www.spoj.com/problems/VFMUL/" target="_blank">Very Fast Multiplication</a></td>
+<td>SPOJ</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="http://www.codechef.com/problems/FARASA" target="_blank">Furik and Rubik and Sub Array</a></td>
+<td>CodeChef</td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="http://www.spoj.com/problems/MAXMATCH/" target="_blank">Maximum Self-Matching</a></td>
+<td>SPOJ</td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>6</td>
+<td><a href="http://www.codechef.com/problems/COUNTARI" target="_blank">Arithmetic Progressions</a></td>
+<td>CodeChef</td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>7</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=4744" target="_blank">Golf Bot</a></td>
+<td>UVA</td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>8</td>
+<td><a href="http://www.codechef.com/problems/BUYLAND" target="_blank">Buying Land</a></td>
+<td>CodeChef</td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>9</td>
+<td><a href="http://codeforces.com/problemset/problem/528/D" target="_blank">Fuzzy Search</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #296 (Div. 1)</td>
+<td>7</td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="http://codeforces.com/problemset/problem/662/C" target="_blank">Binary Table</a></td>
+<td>Codeforces</td>
+<td>CROC 2016 - Final Round [Private, For Onsite Finalists Only]</td>
+<td>7</td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="http://codeforces.com/problemset/problem/444/B" target="_blank">DZY Loves FFT</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #254 (Div. 1) & Codeforces Round #254 (Div. 2)</td>
+<td>7</td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="http://codeforces.com/problemset/problem/632/E" target="_blank">Thief in a Shop</a></td>
+<td>Codeforces</td>
+<td>Educational Codeforces Round 9</td>
+<td>7</td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="http://codeforces.com/problemset/problem/438/E" target="_blank">The Child and Binary Tree</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #250 (Div. 1)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>14</td>
+<td><a href="http://codeforces.com/problemset/problem/300/D" target="_blank">Painting Square</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #181 (Div. 2)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>15</td>
+<td><a href="http://codeforces.com/problemset/problem/286/E" target="_blank">Ladies' Shop</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #176 (Div. 1)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>16</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=4929" target="_blank">Design New Capital</a></td>
+<td>UVA</td>
+<td></td>
+<td>8</td>
+</tr>
+<tr>
+<td>17</td>
+<td><a href="http://codeforces.com/problemset/problem/754/E" target="_blank">Dasha and cyclic table</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #390 (Div. 2)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>18</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=4791" target="_blank">Tile Cutting</a></td>
+<td>UVA</td>
+<td></td>
+<td>9</td>
+</tr>
+<tr>
+<td>19</td>
+<td><a href="http://codeforces.com/problemset/problem/472/G" target="_blank">Design Tutorial: Increase the Constraints</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #270</td>
+<td>9</td>
+</tr>
+<tr>
+<td>20</td>
+<td><a href="http://codeforces.com/problemset/problem/623/E" target="_blank">Transforming Sequence</a></td>
+<td>Codeforces</td>
+<td>AIM Tech Round (Div. 1)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>21</td>
+<td><a href="http://codeforces.com/problemset/problem/896/D" target="_blank">Nephren Runs a Cinema</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #449 (Div. 1)</td>
+<td>10</td>
+</tr>
+<tr>
+<td>22</td>
+<td><a href="http://codeforces.com/problemset/problem/553/E" target="_blank">Kyoya and Train</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #309 (Div. 1)</td>
+<td>10</td>
+</tr>
+<tr>
+<td>23</td>
+<td><a href="http://codeforces.com/problemset/problem/848/E" target="_blank">Days of Floral Colours</a></td>
+<td>Codeforces</td>
+<td>Codeforces Round #431 (Div. 1)</td>
+<td>10</td>
+</tr>
+</table>
+</center>
+</body>
+</html>

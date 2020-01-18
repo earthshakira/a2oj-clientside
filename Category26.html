@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<title>A2OJ Category: Binary Indexed Tree</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+</style>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push( [ '_setAccount', 'UA-16947566-3' ]);
+	_gaq.push( [ '_trackPageview' ]);
+
+	( function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+				: 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</head>
+<body><script src="fetcher.js"></script>
+<center>
+<font size=4>
+<b>
+<u>
+Binary Indexed Tree problems</u></b></font><br/><br/>
+<table>
+<tr>
+<th></th>
+<th>Problem Name</th>
+<th>Online Judge</th>
+<th>Year</th>
+<th>Contest</th>
+<th>Difficulty Level</th>
+</tr>
+<tr>
+<td>1</td>
+<td><a href="http://www.spoj.com/problems/INCSEQ/" target="_blank">Increasing Subsequences</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="http://www.spoj.com/problems/KQUERY/" target="_blank">K-query</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="http://www.spoj.com/problems/MATSUM/" target="_blank">Matrix Summation</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="http://www.spoj.com/problems/YODANESS/" target="_blank">Yodaness Level</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="http://codeforces.com/problemset/problem/466/C" target="_blank">Number of Ways</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #266 (Div. 2)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>6</td>
+<td><a href="http://www.spoj.com/problems/ASSIST/" target="_blank">Assistance Required</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>7</td>
+<td><a href="http://www.spoj.com/problems/MSE06H/" target="_blank">Japan</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>8</td>
+<td><a href="http://www.spoj.com/problems/INVCNT/" target="_blank">Inversion Count</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>9</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=3809" target="_blank">Jupiter Atacks!</a></td>
+<td>Live Archive</td>
+<td>2011</td>
+<td>Latin America</td>
+<td>1</td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="http://codeforces.com/problemset/problem/276/C" target="_blank">Little Girl and Maximum Sum</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #169 (Div. 2)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="http://www.spoj.com/problems/ORDERS/" target="_blank">Ordering the Soldiers</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="http://www.spoj.com/problems/HORRIBLE/" target="_blank">Horrible Queries</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="http://www.spoj.com/problems/RATING/" target="_blank">Coder Ratings</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>14</td>
+<td><a href="http://www.spoj.com/problems/GSS4/" target="_blank">Can you answer these queries IV</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>15</td>
+<td><a href="http://www.spoj.com/problems/NICEDAY/" target="_blank">The day of the competitors</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>16</td>
+<td><a href="http://www.spoj.com/problems/UPDATEIT/" target="_blank">Update the array !</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>17</td>
+<td><a href="http://www.spoj.com/problems/CTRICK/" target="_blank">Card Trick</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>18</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=4150" target="_blank">Interval Product</a></td>
+<td>Live Archive</td>
+<td>2012</td>
+<td>Latin America</td>
+<td>1</td>
+</tr>
+<tr>
+<td>19</td>
+<td><a href="http://www.spoj.com/problems/ORDERSET/" target="_blank">Order statistic set</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>20</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=2807" target="_blank">Bingo!</a></td>
+<td>Live Archive</td>
+<td>2010</td>
+<td>Latin America</td>
+<td>1</td>
+</tr>
+<tr>
+<td>21</td>
+<td><a href="http://www.spoj.com/problems/DQUERY/" target="_blank">D-query</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>22</td>
+<td><a href="http://www.codechef.com/problems/SPREAD" target="_blank">Gravel</a></td>
+<td>CodeChef</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>23</td>
+<td><a href="http://www.spoj.com/problems/WINDVANE/" target="_blank">WIND VANE</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>24</td>
+<td><a href="http://codeforces.com/problemset/problem/295/A" target="_blank">Greg and Array</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #179 (Div. 1) & Codeforces Round #179 (Div. 2)</td>
+<td>2</td>
+</tr>
+<tr>
+<td>25</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3977" target="_blank">Interval Product</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>26</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3238" target="_blank">Potentiometers</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>27</td>
+<td><a href="http://www.spoj.com/problems/KPMATRIX/" target="_blank">Matrix</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>28</td>
+<td><a href="http://www.spoj.com/problems/FENTREE/" target="_blank">Fenwick Trees</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>29</td>
+<td><a href="http://www.spoj.com/problems/RRSCHED/" target="_blank">Round-Robin Scheduling</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>30</td>
+<td><a href="http://www.spoj.com/problems/NKMOBILE/" target="_blank">IOI01 Mobiles</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>31</td>
+<td><a href="http://codeforces.com/problemset/problem/704/A" target="_blank">Thor</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #366 (Div. 1) & Codeforces Round #366 (Div. 2)</td>
+<td>2</td>
+</tr>
+<tr>
+<td>32</td>
+<td><a href="http://www.spoj.com/problems/SWAPS/" target="_blank">Counting inversions</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>33</td>
+<td><a href="http://www.spoj.com/problems/MCHAOS/" target="_blank">Chaos Strings</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>34</td>
+<td><a href="http://codeforces.com/problemset/problem/816/B" target="_blank">Karen and Coffee</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #419 (Div. 2)</td>
+<td>2</td>
+</tr>
+<tr>
+<td>35</td>
+<td><a href="http://www.spoj.com/problems/METEORS/" target="_blank">Meteors</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>36</td>
+<td><a href="http://www.spoj.com/problems/INCDSEQ/" target="_blank">Distinct Increasing Subsequences</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>37</td>
+<td><a href="http://www.spoj.com/problems/CVJETICI/" target="_blank">Cvjetici</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>38</td>
+<td><a href="http://codeforces.com/problemset/problem/459/D" target="_blank">Pashmak and Parmida's problem</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #261 (Div. 2)</td>
+<td>3</td>
+</tr>
+<tr>
+<td>39</td>
+<td><a href="http://www.spoj.com/problems/BRICKS/" target="_blank">New bricks disorder</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>40</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=4174" target="_blank">Ping pong</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>41</td>
+<td><a href="http://acm.timus.ru/problem.aspx?space=1&num=1470" target="_blank">UFOs</a></td>
+<td>Timus</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>42</td>
+<td><a href="http://vn.spoj.com/problems/KMEDIAN/" target="_blank">Above the Median </a></td>
+<td>SPOJ Vietnam</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>43</td>
+<td><a href="http://www.spoj.com/problems/CCOST/" target="_blank">Calculate The Cost</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>44</td>
+<td><a href="http://www.spoj.com/problems/SALMAN/" target="_blank">Salary Management</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>45</td>
+<td><a href="http://www.spoj.com/problems/NKTEAM/" target="_blank">Team Selection</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>46</td>
+<td><a href="http://www.codechef.com/problems/CHEFINV" target="_blank">Chef and Swaps</a></td>
+<td>CodeChef</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>47</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2272" target="_blank">Census</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>48</td>
+<td><a href="http://www.spoj.com/problems/QUE2/" target="_blank">Queue (Pro)</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>49</td>
+<td><a href="http://www.spoj.com/problems/CPAIR/" target="_blank">Counting pairs</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>50</td>
+<td><a href="http://www.spoj.com/problems/COWPIC/" target="_blank">Cow Photographs </a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>51</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=4259" target="_blank">Movie collection</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>52</td>
+<td><a href="http://codeforces.com/problemset/problem/383/C" target="_blank">Propagating tree</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #225 (Div. 1) & Codeforces Round #225 (Div. 2)</td>
+<td>4</td>
+</tr>
+<tr>
+<td>53</td>
+<td><a href="http://codeforces.com/problemset/problem/755/D" target="_blank">PolandBall and Polygon</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>8VC Venture Cup 2017 - Elimination Round</td>
+<td>5</td>
+</tr>
+<tr>
+<td>54</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3141" target="_blank">``Dynamic'' Inversion</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>55</td>
+<td><a href="http://br.spoj.com/problems/BALE11/" target="_blank">Bal&eacute;</a></td>
+<td>SPOJ Brazil</td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>56</td>
+<td><a href="http://codeforces.com/problemset/problem/961/E" target="_blank">Tufurama</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Educational Codeforces Round 41 (Rated for Div. 2)</td>
+<td>5</td>
+</tr>
+<tr>
+<td>57</td>
+<td><a href="http://codeforces.com/problemset/problem/703/D" target="_blank">Mishka and Interesting sum</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #365 (Div. 2)</td>
+<td>5</td>
+</tr>
+<tr>
+<td>58</td>
+<td><a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3787" target="_blank">Jupiter Atacks!</a></td>
+<td>UVA</td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>59</td>
+<td><a href="http://codeforces.com/problemset/problem/474/E" target="_blank">Pillars</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #271 (Div. 2)</td>
+<td>5</td>
+</tr>
+<tr>
+<td>60</td>
+<td><a href="http://community.topcoder.com/stat?c=problem_statement&pm=6551" target="_blank">FloatingMedian</a></td>
+<td>TopCoder</td>
+<td></td>
+<td>SRM 310 - Div1 medium - Div2 hard] (9990)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>61</td>
+<td><a href="http://codeforces.com/problemset/problem/369/E" target="_blank">Valera and Queries</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #216 (Div. 2)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>62</td>
+<td><a href="http://www.codechef.com/problems/SEAARC" target="_blank">Sereja and Arcs</a></td>
+<td>CodeChef</td>
+<td></td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>63</td>
+<td><a href="http://codeforces.com/problemset/problem/540/E" target="_blank">Infinite Inversions</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #301 (Div. 2)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>64</td>
+<td><a href="http://codeforces.com/problemset/problem/847/D" target="_blank">Dog Show</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>2017-2018 ACM-ICPC, NEERC, Southern Subregional Contest, qualification stage (Online Mirror, ACM-ICPC Rules, Teams Preferred)</td>
+<td>7</td>
+</tr>
+<tr>
+<td>65</td>
+<td><a href="http://www.spoj.com/problems/CNTINDX2/" target="_blank">Count The Indexes 2</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>7</td>
+</tr>
+<tr>
+<td>66</td>
+<td><a href="http://acm.timus.ru/problem.aspx?space=1&num=2062" target="_blank">Ambitious Experiment</a></td>
+<td>Timus</td>
+<td></td>
+<td></td>
+<td>7</td>
+</tr>
+<tr>
+<td>67</td>
+<td><a href="http://codeforces.com/problemset/problem/387/E" target="_blank">George and Cards</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #227 (Div. 2)</td>
+<td>7</td>
+</tr>
+<tr>
+<td>68</td>
+<td><a href="http://br.spoj.com/problems/JUPT11/" target="_blank">J&uacute;piter Ataca!</a></td>
+<td>SPOJ Brazil</td>
+<td></td>
+<td></td>
+<td>8</td>
+</tr>
+<tr>
+<td>69</td>
+<td><a href="http://codeforces.com/problemset/problem/762/E" target="_blank">Radio stations</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Educational Codeforces Round 17</td>
+<td>8</td>
+</tr>
+</table>
+</center>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<title>A2OJ Category: Heavy-Light Descomposition</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+</style>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push( [ '_setAccount', 'UA-16947566-3' ]);
+	_gaq.push( [ '_trackPageview' ]);
+
+	( function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+				: 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</head>
+<body><script src="fetcher.js"></script>
+<center>
+<font size=4>
+<b>
+<u>
+Heavy-Light Descomposition problems</u></b></font><br/><br/>
+<table>
+<tr>
+<th></th>
+<th>Problem Name</th>
+<th>Online Judge</th>
+<th>Year</th>
+<th>Contest</th>
+<th>Difficulty Level</th>
+</tr>
+<tr>
+<td>1</td>
+<td><a href="http://www.spoj.com/problems/QTREE/" target="_blank">Query on a tree</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="http://www.spoj.com/problems/QTREE2/" target="_blank">Query on a tree II</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="http://www.spoj.com/problems/COT/" target="_blank">Count on a tree</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="http://www.spoj.com/problems/QTREE3/" target="_blank">Query on a tree again!</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="http://www.spoj.com/problems/OTOCI/" target="_blank">OTOCI</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>6</td>
+<td><a href="http://www.spoj.com/problems/GSS7/" target="_blank">Can you answer these queries VII</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>7</td>
+<td><a href="http://www.spoj.com/problems/QTREE4/" target="_blank">Query on a tree IV</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>8</td>
+<td><a href="http://www.spoj.com/problems/QTREE5/" target="_blank">Query on a tree V</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>9</td>
+<td><a href="http://www.spoj.com/problems/COT2/" target="_blank">Count on a tree II</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="http://www.codechef.com/problems/RRTREE" target="_blank">Tree</a></td>
+<td>CodeChef</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="http://www.spoj.com/problems/GOT/" target="_blank">Gao on a tree</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="http://www.codechef.com/problems/PRIMEDST" target="_blank">Prime Distance On Tree</a></td>
+<td>CodeChef</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="http://www.spoj.com/problems/BTCODE_G/" target="_blank">Coloring Trees</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>14</td>
+<td><a href="http://www.spoj.com/problems/QTREE6/" target="_blank">Query on a tree VI</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>15</td>
+<td><a href="http://www.codechef.com/problems/DGCD" target="_blank">Dynamic GCD</a></td>
+<td>CodeChef</td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>16</td>
+<td><a href="http://www.spoj.com/problems/GRASSPLA/" target="_blank">Grass Planting</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>17</td>
+<td><a href="http://www.codechef.com/problems/RRTREE2" target="_blank">Tree Again</a></td>
+<td>CodeChef</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>18</td>
+<td><a href="http://codeforces.com/problemset/problem/383/C" target="_blank">Propagating tree</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #225 (Div. 1) & Codeforces Round #225 (Div. 2)</td>
+<td>4</td>
+</tr>
+<tr>
+<td>19</td>
+<td><a href="http://www.codechef.com/problems/QTREE6" target="_blank">Query on a tree VI</a></td>
+<td>CodeChef</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>20</td>
+<td><a href="http://acm.timus.ru/problem.aspx?space=1&num=1553" target="_blank">Caves and Tunnels</a></td>
+<td>Timus</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>21</td>
+<td><a href="http://codeforces.com/problemset/problem/342/E" target="_blank">Xenia and Tree</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #199 (Div. 2)</td>
+<td>4</td>
+</tr>
+<tr>
+<td>22</td>
+<td><a href="http://www.codechef.com/problems/IDOLS" target="_blank">Idols and Fans</a></td>
+<td>CodeChef</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>23</td>
+<td><a href="http://www.spoj.com/problems/COT3/" target="_blank">Combat on a tree</a></td>
+<td>SPOJ</td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>24</td>
+<td><a href="http://codeforces.com/problemset/problem/587/C" target="_blank">Duff in the Army</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #326 (Div. 1) & Codeforces Round #326 (Div. 2)</td>
+<td>5</td>
+</tr>
+<tr>
+<td>25</td>
+<td><a href="http://www.codechef.com/problems/QUERY" target="_blank">Observing the Tree</a></td>
+<td>CodeChef</td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>26</td>
+<td><a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&page=show_problem&problem=6218" target="_blank">Imperial roads</a></td>
+<td>Live Archive</td>
+<td>2017</td>
+<td>Latin America</td>
+<td>5</td>
+</tr>
+<tr>
+<td>27</td>
+<td><a href="http://www.codechef.com/problems/FIBTREE" target="_blank">Fibonacci Numbers on Tree</a></td>
+<td>CodeChef</td>
+<td></td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>28</td>
+<td><a href="http://www.codechef.com/problems/GERALD2" target="_blank">Black and White Tree</a></td>
+<td>CodeChef</td>
+<td></td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>29</td>
+<td><a href="http://codeforces.com/problemset/problem/555/E" target="_blank">Case of Computer Network</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #310 (Div. 1)</td>
+<td>7</td>
+</tr>
+<tr>
+<td>30</td>
+<td><a href="http://www.codechef.com/problems/PUSHFLOW" target="_blank">Push the Flow!</a></td>
+<td>CodeChef</td>
+<td></td>
+<td></td>
+<td>7</td>
+</tr>
+<tr>
+<td>31</td>
+<td><a href="http://codeforces.com/problemset/problem/593/D" target="_blank">Happy Tree Party</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #329 (Div. 2)</td>
+<td>7</td>
+</tr>
+<tr>
+<td>32</td>
+<td><a href="http://codeforces.com/problemset/problem/165/D" target="_blank">Beard Graph</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #112 (Div. 2)</td>
+<td>7</td>
+</tr>
+<tr>
+<td>33</td>
+<td><a href="http://codeforces.com/problemset/problem/22/E" target="_blank">Scheme</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Beta Round #22 (Div. 2 Only)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>34</td>
+<td><a href="http://codeforces.com/problemset/problem/235/D" target="_blank">Graph Game</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #146 (Div. 1)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>35</td>
+<td><a href="http://codeforces.com/problemset/problem/696/E" target="_blank">...Wait for it...</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Round #362 (Div. 1)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>36</td>
+<td><a href="http://codeforces.com/problemset/problem/117/E" target="_blank">Tree or not Tree</a></td>
+<td>Codeforces</td>
+<td></td>
+<td>Codeforces Beta Round #88</td>
+<td>10</td>
+</tr>
+</table>
+</center>
+</body>
+</html>
