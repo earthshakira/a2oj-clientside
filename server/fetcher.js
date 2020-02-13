@@ -8,6 +8,9 @@ document.write(`<!-- Global site tag (gtag.js) - Google Analytics -->
   gtag('config', 'UA-132341920-2');
 </script>
 `)
+
+page_data  = {};
+
 function setCookie(cname, cvalue, exdays) {
   var d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -62,6 +65,8 @@ function loadScript(url, callback){
 
 function updatePage(){
 	let username = getCookie("cf_username");
+	let page = this.location.href.substring(this.location.href.lastIndexOf('/') + 1);
+
 	$("#cf_username").html(username)
 	let url = `https://codeforces.com/api/user.status?handle=${username}`;
 	$.getJSON(url,(data,status) => {
@@ -71,22 +76,38 @@ function updatePage(){
 				continue;
 			solved.add(`http://codeforces.com/problemset/problem/${item.problem.contestId}/${item.problem.index}`)
 		}
-		for (let item of solved)
-			console.log(item)
+		if (page == "Ladders.html" || page == "Categories.html"){
+			let links = page_data[page];
 
-		for(let element of $("td > a")){
-			if(solved.has($(element).attr("href"))){
-				console.log("yeah")
-				$(element).parent().parent().css("background-color", "lightgreen")
+			for (let item of links){
+				let solved_count = 0;
+				for (let problem_link of page_data[item]){
+					if(solved.has(problem_link)){
+						solved_count+=1
+					}
+				}
+				let text = $(`td > a[href="${item}"]`).parent().html();
+				let solved_percent = Math.floor((solved_count*100)/page_data[item].length);
+				$(`td > a[href="${item}"]`).parent().html(`<div style="position:relative;padding:0;margin:0"><div style="margin-left:-6px;padding-left:2px;margin-top:-6px;position:absolute;z-index:-1;background-color:lightgreen;float:left;height:8px;width:${solved_percent}%;font-size:8px;text-align:left;">${solved_count}</div> ${text}</div>`);
+			}
+		} else {
+			for(let element of $("td > a")){
+				if(solved.has($(element).attr("href"))){
+					$(element).parent().parent().css("background-color", "lightgreen")
+				}
 			}
 		}
 	})
 	
 }
+
 function startService(){
-	updatePage()
-	setInterval(updatePage,60000)
-	
+	let problem_tree = "./data.json";
+	$.getJSON(problem_tree,(data,status) => {
+		page_data = data
+		updatePage()
+		setInterval(updatePage,60000)
+	})
 }
 function validateUsername(username){
 	let url = `https://codeforces.com/api/user.info?handles=${username}`
